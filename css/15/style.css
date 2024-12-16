@@ -1,0 +1,57 @@
+h1 {
+  color: rgb(24, 24, 26);
+  border-left: solid hsl(56, 87%, 44%) 20px;
+  background-image: linear-gradient(
+    15deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(319deg 100% 30%) 8%,
+    hsl(346deg 83% 51%) 22%,
+    hsl(30deg 100% 55%) 52%,
+    hsl(55deg 100% 50%) 70%,
+    hsl(67deg 89% 51%) 79%,
+    hsl(82deg 93% 59%) 85%,
+    hsl(106deg 97% 66%) 89%,
+    hsl(147deg 100% 50%) 92%,
+    hsl(172deg 100% 45%) 95%,
+    hsl(193deg 100% 50%) 97%,
+    hsl(202deg 100% 50%) 99%,
+    hsl(216deg 100% 50%) 100%
+  );
+  text-align: center;
+  border-radius: 10px;
+}
+.first_para {
+  background-color: brown;
+  color: beige;
+}
+.second_para {
+  background-image: linear-gradient(
+    195deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(13deg 6% 39%) 8%,
+    hsl(49deg 28% 45%) 17%,
+    hsl(52deg 43% 49%) 25%,
+    hsl(53deg 61% 52%) 33%,
+    hsl(54deg 81% 54%) 42%,
+    hsl(55deg 100% 50%) 50%,
+    hsl(47deg 87% 68%) 58%,
+    hsl(30deg 67% 75%) 67%,
+    hsl(344deg 46% 76%) 75%,
+    hsl(301deg 45% 68%) 83%,
+    hsl(284deg 76% 64%) 92%,
+    hsl(283deg 100% 50%) 100%
+  );
+  color: rgb(37, 37, 36);
+}
+.third_para {
+  background-color: rgb(243, 127, 49);
+  color: beige;
+}
+.fourth_para {
+  background-color: rgb(66, 187, 243);
+  color: beige;
+}
+.fifth_para {
+  background-color: rgb(240, 23, 88);
+  color: beige;
+}

@@ -1,0 +1,13 @@
+* {
+  margin: 0px;
+}
+
+h1 {
+  color: magenta;
+}
+
+button {
+  color: rgb(17, 20, 20);
+  font-size: 20px;
+  background-color: chartreuse;
+}

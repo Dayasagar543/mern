@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NL+Guides&display=swap");
+
+p {
+  font-size: medium;
+  font-weight: 600;
+  font-family: "Playwrite NL Guides", cursive;
+  font-style: normal;
+  line-height: auto;
+}
+
+#first_para {
+  background-color: teal;
+  color: white;
+}
+
+#second_para {
+  background-color: rgb(129, 129, 240);
+  color: rgb(250, 215, 250);
+  margin: 10px;
+}
+#third_para {
+  background-color: rgb(198 6 79);
+  color: rgb(226, 250, 215);
+  margin: 10px;
+}
+#fourth_para {
+  background-color: rgb(240, 196, 129);
+  color: rgb(53, 49, 43);
+  margin: 10px;
+}
+#fifth_para {
+  background-color: rgb(2, 52, 36);
+  color: rgba(236, 40, 14, 0.856);
+}
+
+div {
+  width: 100%;
+}
+
+article {
+  display: flex;
+  justify-content: space-around;
+}

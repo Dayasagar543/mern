@@ -1,0 +1,21 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+p {
+  text-align: right;
+  color: plum;
+}
+
+#para4 {
+  color: rgb(73, 230, 25);
+}
+.para4 {
+  background-color: plum;
+  color: rgb(128, 0, 49);
+}
+p,
+section {
+  width: 50%;
+}
