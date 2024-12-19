@@ -36,27 +36,27 @@ const print2DArray = (array) => {
   }
 };
 
-let arrayToBeRotated = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9],
-];
+// let arrayToBeRotated = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
 
-print2DArray(arrayToBeRotated);
+// print2DArray(arrayToBeRotated);
 
-let roatatedArray = [];
+// let roatatedArray = [];
 
-//transpose of an array
+// //transpose of an array
 
-const rotateArray = (arrayToBeRotated, roatatedArray) => {
-  let i = 0;
-  roatatedArray[arrayToBeRotated.length][arrayToBeRotated[0].length];
-  for (let i = 0; i < arrayToBeRotated.length; i++) {
-    for (let j = 0; j < arrayToBeRotated[i].length; j++) {
-      roatatedArray[i][j] = arrayToBeRotated[j][i];
-    }
-  }
-};
+// const rotateArray = (arrayToBeRotated, roatatedArray) => {
+//   let i = 0;
+//   roatatedArray[arrayToBeRotated.length][arrayToBeRotated[0].length];
+//   for (let i = 0; i < arrayToBeRotated.length; i++) {
+//     for (let j = 0; j < arrayToBeRotated[i].length; j++) {
+//       roatatedArray[i][j] = arrayToBeRotated[j][i];
+//     }
+//   }
+// };
 
 rotateArray(arrayToBeRotated, roatatedArray);
 print2DArray(roatatedArray);
@@ -69,3 +69,14 @@ let previousContext = "my name is ";
 console.log(`my brother name is  ${name1}`);
 
 console.log(previousContext + name1);
+
+let sentence = 'do \\ you love the lord \\"can you read"\\ the data';
+
+console.log('hi there how a "you"hello"there"can you read it. ');
+console.log(sentence);
+
+let words=sentence.split('\\')
+console.log(words)
+
+let sentence2=words.join('*');
+console.log(sentence2)

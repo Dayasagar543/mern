@@ -1,7 +1,11 @@
-let name1 = "vidyasagar";
 
-let previousContext = "my name is ";
+let sentence = 'do \\ you love the lord \\"can you read"\\ the data';
 
-console.log(`my brother name is  ${name1}`);
+console.log('hi there how a "you"hello"there"can you read it. ');
+console.log(sentence);
 
-console.log(previousContext + name1);
+let words=sentence.split('\\')
+console.log(words)
+
+let sentence2=words.join('*');
+console.log(sentence2)
