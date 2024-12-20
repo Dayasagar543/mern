@@ -1,9 +1,9 @@
-function sum_all_of_preceeding(num){
-    if(num===1){
-        return 1
-    }
-return num+sum_all_of_preceeding(num-1)
+function print_values_zero(num){
+  if(num==0){
+    return 0;
+  }
+  console.log(num)
+  return print_values_zero(num-1);
 }
 
-let result =sum_all_of_preceeding(10)
-console.log(result)
+print_values_zero(52);
