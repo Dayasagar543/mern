@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sub1 {
+  width: 25vw;
+  height: 25vh;
+  background-color: red;
+}
+
+.sub2 {
+  width: 25vw;
+  height: 25vh;
+  background-color: blue;
+}
+
+.sub3 {
+  width: 25vw;
+  height: 25vh;
+  background-color: rgb(43, 255, 0);
+}
+
+.sub4 {
+  width: 25vw;
+  height: 25vh;
+  background-color: rgba(162, 0, 255, 0.753);
+}
+
+.contianer {
+  display: flex;
+}
