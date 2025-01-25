@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contianer{
+    border: 2px solid black;
+    /* margin-left: 50px ;  */
+    background-color: aquamarine;
+    text-align: center;
+    overflow:auto;
+}
+
+.item1{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 2px;
+}
+.item2{
+    background-color: rgb(98, 0, 255);
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 2px;
+}
+.item3{
+    background-color: rgb(85, 241, 46);
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin: 2px;
+}

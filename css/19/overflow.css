@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  border: 0;
+  /* box-sizing: border-box; */
+}
+
+.container {
+  border: 2px solid black;
+  width: 400px;
+  height: 400px;
+ /* overflow: hidden; */
+ overflow:scroll;
+/* overflow:auto; */
+}
