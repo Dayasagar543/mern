@@ -1,0 +1,29 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+
+.container{
+background-color: blue;
+width: 100vw;
+height: 100vh;
+}
+
+.left{
+    color: yellow;
+}
+.right{
+    color: red;
+}
+
+
+@media (max-width:750px){
+ .container{
+    background-color:rgb(255, 238, 0);
+ }
+ .right , .left{
+    color: black;
+ }
+}
