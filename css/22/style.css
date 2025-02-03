@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: gold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.box {
+  text-align: center;
+  border: 2px solid black;
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 40px;
+  align-content: center;
+  background-color: rgb(171, 211, 98);
+  box-shadow: 5px 7px 10px 1px rgb(84, 91, 196);
+  text-align: center;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50px;
+  margin: 10px;
+}
+h2 {
+  margin: 10px;
+}
+
+P {
+  margin: 10px;
+}
