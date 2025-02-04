@@ -14,9 +14,39 @@
   height: 100vh;
   background: url("../../images/DALL·E\ 2025-01-23\ 10.06.38\ -\ A\ majestic\ cosmic\ waterfall\ cascading\ through\ a\ star-filled\ galaxy\,\ with\ streams\ of\ water\ made\ of\ glowing\,\ colorful\ energy\ in\ shades\ of\ blue\,\ purple\,\ .webp");
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
   background-size: 100%;
 }
 
+#upper {
+  width: 300px;
+  height: 200px;
+  background: url("../../images/DALL·E\ 2025-02-03\ 10.10.34\ -\ A\ soft\,\ ethereal\ angel\ with\ pastel-colored\ wings\ kneels\ in\ a\ moonlit\ meadow\,\ touching\ the\ forehead\ of\ a\ peaceful\ deer.\ Fireflies\ dance\ around\ them\,\ an.webp");
+  background-position: 60%;
+  border-radius: 20px;
+  background-size: 100%;
+  margin:20px;
+}
 
+#lower {
+   width: 300px;
+  height: 200px;
+  background: url("../../images/DALL·E\ 2025-02-03\ 10.10.34\ -\ A\ soft\,\ ethereal\ angel\ with\ pastel-colored\ wings\ kneels\ in\ a\ moonlit\ meadow\,\ touching\ the\ forehead\ of\ a\ peaceful\ deer.\ Fireflies\ dance\ around\ them\,\ an.webp");
+  background-position: 60%;
+  border-radius: 20px;
+  background-size: 100%;
+  margin:20px;
+}
 
-
+#circle {
+  width: 200px;
+  height: 200px;
+  background: url("../../images/DALL·E\ 2025-02-03\ 10.10.34\ -\ A\ soft\,\ ethereal\ angel\ with\ pastel-colored\ wings\ kneels\ in\ a\ moonlit\ meadow\,\ touching\ the\ forehead\ of\ a\ peaceful\ deer.\ Fireflies\ dance\ around\ them\,\ an.webp");
+  background-position: 60%;
+  border-radius: 20px;
+  background-size: 100%;
+  background-position: relative;
+  margin: 10px;
+  border-radius: 50%;
+}
