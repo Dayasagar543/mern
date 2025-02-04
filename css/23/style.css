@@ -1,10 +1,22 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
-
-:root {
+/* 
+:root {css/23/style.css
   --heading-color: yellow;
   --heading-height: 250px;
+} */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: url("../../images/DALL·E\ 2025-01-23\ 10.06.38\ -\ A\ majestic\ cosmic\ waterfall\ cascading\ through\ a\ star-filled\ galaxy\,\ with\ streams\ of\ water\ made\ of\ glowing\,\ colorful\ energy\ in\ shades\ of\ blue\,\ purple\,\ .webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
+
+
+
+
