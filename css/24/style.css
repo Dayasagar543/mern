@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: bisque;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.inner_container {
+  width: 200px;
+  height: 200px;
+  background-color: teal;
+  position: relative;
+  margin: 20px;
+  transition: linear;
+  transition-duration: 5s;
+  -o-transition-property: ;
+}
