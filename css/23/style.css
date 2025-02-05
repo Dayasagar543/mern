@@ -7,12 +7,70 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: blue;
+  position: absolute;
+  background-image: url("../../images/DALL·E\ 2025-01-23\ 10.06.38\ -\ A\ majestic\ cosmic\ waterfall\ cascading\ through\ a\ star-filled\ galaxy\,\ with\ streams\ of\ water\ made\ of\ glowing\,\ colorful\ energy\ in\ shades\ of\ blue\,\ purple\,\ .webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .upper {
   width: 200px;
   height: 200px;
-  margin: 20px;
-  background-color: yellow;
+  margin: 30px;
+  position: relative;
+  background-image: url("../../images/DALL·E\ 2025-02-03\ 10.10.37\ -\ A\ serene\ angel\ with\ silver-blue\ wings\,\ hovering\ over\ the\ ocean\,\ extending\ her\ hand\ to\ a\ leaping\ dolphin.\ The\ water\ sparkles\ with\ magic\,\ and\ the\ sky\ gl.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  animation-name: move_the_image;
+  animation-direction: alternate;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+    box-shadow: 2px 3px 2px gold;
+}
+.lower {
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  position: relative;
+  background-image: url("../../images/DALL·E\ 2025-02-03\ 10.10.37\ -\ A\ serene\ angel\ with\ silver-blue\ wings\,\ hovering\ over\ the\ ocean\,\ extending\ her\ hand\ to\ a\ leaping\ dolphin.\ The\ water\ sparkles\ with\ magic\,\ and\ the\ sky\ gl.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  animation-name: move_the_image_counter;
+  animation-direction: alternate;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  box-shadow: 2px 3px 2px gold;
+}
+
+@keyframes move_the_image {
+  from {
+    top: 20px;
+    left: 0px;
+  }
+
+  to {
+    top: 20px;
+    left: 1700px;
+  }
+}
+@keyframes move_the_image_counter {
+  from {
+    top: 20px;
+    left: 1700px;
+    
+  }
+
+  to {
+    top: 20px;
+    left: 0px;
+  }
 }
