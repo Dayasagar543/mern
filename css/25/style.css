@@ -39,14 +39,29 @@ h2 {
   transition-delay: 1s;
   transition-timing-function: ease-in-out;
 }
-#img2 {
+#img2:hover {
   border-radius: 25%;
+  transform: scale(2);
+  transition: all;
+  transition-duration: 5s;
+  transition-delay: 1s;
+  transition-timing-function: ease-in-out;
 }
-#img3 {
+#img3:hover {
   border: 2px solid rgb(72, 255, 0);
   border-radius: 25%;
+  transform: rotate(180deg);
+  transition: all;
+  transition-duration: 5s;
+  transition-delay: 1s;
+  transition-timing-function: ease-in;
 }
-#img4 {
+#img4:hover {
   border: 2px solid rgb(0, 255, 128);
   box-shadow: 5px 5px 1px green;
+  transform: skewx(20);
+  transition: all;
+  transition-duration: 5s;
+  transition-delay: 1s;
+  transition-timing-function: ease-out;
 }
