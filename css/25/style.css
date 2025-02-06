@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.inner_boxes {
+  position: relative;
+  margin: 10px;
+  background-color: rgb(210, 175, 241);
+  width: auto;
+  height: 200px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+h2 {
+  color: rgb(255, 243, 80);
+  font-family: "Times New Roman", Times, serif;
+}
+
+#img1:hover {
+  border: 2px solid rgb(238, 255, 0);
+  transform: translateX(1250px);
+  transition: all;
+  transition-duration: 5s;
+  transition-delay: 1s;
+  transition-timing-function: ease-in-out;
+}
+#img2 {
+  border-radius: 25%;
+}
+#img3 {
+  border: 2px solid rgb(72, 255, 0);
+  border-radius: 25%;
+}
+#img4 {
+  border: 2px solid rgb(0, 255, 128);
+  box-shadow: 5px 5px 1px green;
+}
