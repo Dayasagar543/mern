@@ -59,7 +59,7 @@ h2 {
 #img4:hover {
   border: 2px solid rgb(0, 255, 128);
   box-shadow: 5px 5px 1px green;
-  transform: skewx(20);
+  transform: skewx(-40deg);
   transition: all;
   transition-duration: 5s;
   transition-delay: 1s;
