@@ -14,10 +14,18 @@
 .inner_container {
   width: 200px;
   height: 200px;
+  margin: 20px;
+  border-radius: 50%;
   background-color: teal;
   position: relative;
-  margin: 20px;
-  transition: linear;
+  transition-property: all;
   transition-duration: 5s;
-  -o-transition-property: ;
+  transition-delay: 1s;
+  transition-timing-function: ease-out;
+}
+
+.inner_container:hover {
+  width: 1200px;
+  height: 700px;
+  background-color: purple;
 }
