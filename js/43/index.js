@@ -9,8 +9,17 @@ function run(data) {
 
 run(100);
 
+
+//arrow functions
 const value = () => {
   console.log("surendharan");
 };
 
 value();
+
+//functions with variables assigned
+let data=function(){
+  console.log("rendering")
+}
+
+data()
