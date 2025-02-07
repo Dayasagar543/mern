@@ -1,10 +1,11 @@
-let array = [1, 2, 3, 4, 5];
+function power(value, exponent) {
+  if (exponent === 0) {
+    return true;
+  }
+  return value * power(value, exponent - 1);
+}
 
-const mul = (array) => {
-  if (array.length <= 0) {
-    return 1;
-  } else return array[array.length - 1] * mul(array.slice(0, array.length - 1));
-};
-
-let result1 = mul(array);
-console.log(result1)
+let data = power(2, 2);
+let data1 = power(2, 3);
+console.log(data);
+console.log(data1);

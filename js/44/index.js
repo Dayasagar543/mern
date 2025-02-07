@@ -16,7 +16,9 @@ function power(value, exponent) {
 }
 
 let data = power(2, 2);
+let data1 = power(2, 3);
 console.log(data);
+console.log(data1);
 
 function factorial(num) {
   if (num === 0) {
