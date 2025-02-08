@@ -1,11 +1,10 @@
-function power(value, exponent) {
-  if (exponent === 0) {
-    return true;
-  }
-  return value * power(value, exponent - 1);
+let nums1=[1,2,3,4,5]
+const sum_array=(array)=>{
+ let sum=0;
+ array.forEach(element => {
+  sum+=element;
+ });
+ return sum;
 }
 
-let data = power(2, 2);
-let data1 = power(2, 3);
-console.log(data);
-console.log(data1);
+console.log(sum_array(nums1))
