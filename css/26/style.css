@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Playwrite+BE+VLG+Guides&family=Playwrite+NL+Guides&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -12,4 +14,72 @@
   width: 100vw;
   height: auto;
   overflow-x: none;
+}
+
+/* header */
+header {
+  background-color: rgb(188, 131, 241);
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  list-style-type: none;
+}
+li {
+  /* border: 2px solid black; */
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.li_div {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project_theme {
+  font-family: "Mea Culpa", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(233, 255, 111);
+}
+
+.link_header {
+  text-decoration: none;
+  font-family: "Mea Culpa", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.button_header {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: chartreuse;
+  font-family: "Mea Culpa", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+}
+
+/* main  */
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: aquamarine;
+  font-family: "Mea Culpa", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 30px;
 }
