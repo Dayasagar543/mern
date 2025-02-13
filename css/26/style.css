@@ -11,14 +11,20 @@
 } */
 
 .container {
-  width: 100vw;
+  width:100vw;
   height: auto;
   overflow-x: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /* header */
-header {
-  background-color: rgb(188, 131, 241);
+.header {
+  background-color: rgb(253, 169, 253);
+  width: 100vw;
 }
 ul {
   display: flex;
@@ -49,7 +55,7 @@ li {
   font-weight: 900;
   font-style: normal;
   font-size: 30px;
-  color: rgb(233, 255, 111);
+  color: rgba(25, 96, 250, 0.945);
 }
 
 .link_header {
@@ -72,9 +78,45 @@ li {
 }
 
 /* main  */
+.main {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  background-color: chartreuse;
+}
+
+.section {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  background-color: blueviolet;
+  margin:10px;
+  border-radius: 10px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 25%;
+  margin: 20px;
+}
+p{
+  align-content: center;
+  text-align:start;
+  padding: 10px;
+  font-family: "Mea Culpa", serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+}
 
 /* footer */
 .footer {
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   background-color: aquamarine;
@@ -82,4 +124,5 @@ li {
   font-weight: 900;
   font-style: normal;
   font-size: 30px;
+  align-content:end;
 }
