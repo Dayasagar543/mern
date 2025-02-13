@@ -48,6 +48,15 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width:100%/3;
+}
+
+.nav_buttons{
+  width: 50%;
+  height: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .project_theme {
