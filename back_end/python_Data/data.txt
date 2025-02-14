@@ -1,0 +1,80 @@
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    127.0.0.1:8666         NCSERVER:49668         ESTABLISHED
+  TCP    127.0.0.1:49668        NCSERVER:8666          ESTABLISHED
+  TCP    127.0.0.1:49671        NCSERVER:49672         ESTABLISHED
+  TCP    127.0.0.1:49672        NCSERVER:49671         ESTABLISHED
+  TCP    127.0.0.1:49673        NCSERVER:49674         ESTABLISHED
+  TCP    127.0.0.1:49674        NCSERVER:49673         ESTABLISHED
+  TCP    192.168.1.35:49710     20.198.119.84:https    ESTABLISHED
+  TCP    192.168.1.35:50016     20.198.119.84:https    ESTABLISHED
+  TCP    192.168.1.35:65284     sc-in-f188:5228        ESTABLISHED
+  TCP    192.168.1.35:65298     ec2-34-233-6-205:https  ESTABLISHED
+  TCP    192.168.1.35:65329     whatsapp-cdn-shv-01-hyd1:5222  ESTABLISHED
+  TCP    192.168.1.35:65404     server-108-157-238-7:https  ESTABLISHED
+  TCP    192.168.1.35:65406     20.189.173.4:https     ESTABLISHED
+  TCP    192.168.1.35:65407     20.189.173.4:https     ESTABLISHED
+  TCP    192.168.1.35:65408     ec2-34-234-46-213:https  ESTABLISHED
+  TCP    [::1]:65402            NCSERVER:8667          TIME_WAIT
+Bad parameter 1.
+
+Pinging www.google.com [142.250.182.4] with 32 bytes of data:
+Reply from 142.250.182.4: bytes=32 time=15ms TTL=59
+Reply from 142.250.182.4: bytes=32 time=15ms TTL=59
+Reply from 142.250.182.4: bytes=32 time=15ms TTL=59
+Reply from 142.250.182.4: bytes=32 time=15ms TTL=59
+
+Ping statistics for 142.250.182.4:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 15ms, Maximum = 15ms, Average = 15ms
+
+Pinging www.google.com [142.250.182.4] with 32 bytes of data:
+Reply from 142.250.182.4: bytes=32 time=15ms TTL=59
+Reply from 142.250.182.4: bytes=32 time=15ms TTL=59
+Reply from 142.250.182.4: bytes=32 time=15ms TTL=59
+Reply from 142.250.182.4: bytes=32 time=15ms TTL=59
+
+Ping statistics for 142.250.182.4:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 15ms, Maximum = 15ms, Average = 15ms
+
+Pinging www.google.com [142.250.182.4] with 32 bytes of data:
+Reply from 142.250.182.4: bytes=32 time=15ms TTL=59
+Reply from 142.250.182.4: bytes=32 time=15ms TTL=59
+Reply from 142.250.182.4: bytes=32 time=15ms TTL=59
+Reply from 142.250.182.4: bytes=32 time=15ms TTL=59
+
+Ping statistics for 142.250.182.4:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 15ms, Maximum = 15ms, Average = 15ms
+bash: ifconfig: command not found
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : 
+   Link-local IPv6 Address . . . . . : fe80::54c3:6cba:7ec3:d5e2%4
+   IPv4 Address. . . . . . . . . . . : 10.0.0.50
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   IPv4 Address. . . . . . . . . . . : 192.168.1.35
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.1.1
+
+Tunnel adapter isatap.{BA2B9744-4970-4F7C-9521-0453C88F5F9B}:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Tunnel adapter Teredo Tunneling Pseudo-Interface:
+
+   Connection-specific DNS Suffix  . : 
+   IPv6 Address. . . . . . . . . . . : 2001:0:348b:fb58:c98:1660:48ad:ff04
+   Link-local IPv6 Address . . . . . : fe80::c98:1660:48ad:ff04%3
+   Default Gateway . . . . . . . . . : ::

@@ -1,0 +1,12 @@
+people_data = [
+    ["Alice Johnson", 28, "Software Engineer", "New York", "Python, Java, SQL"],
+    ["Bob Smith", 35, "Data Scientist", "San Francisco", "R, Python, TensorFlow"],
+    ["Charlie Brown", 22, "Web Developer", "Los Angeles", "HTML, CSS, JavaScript"],
+    ["David Wilson", 40, "Cybersecurity Analyst", "Washington D.C.", "Ethical Hacking, Networking, Cryptography"],
+    ["Emma Davis", 30, "AI Researcher", "Boston", "Machine Learning, Deep Learning, NLP"],
+    ["Frank Miller", 26, "DevOps Engineer", "Seattle", "AWS, Docker, Kubernetes"],
+    ["Grace Lee", 32, "UX Designer", "Chicago", "UI/UX, Adobe XD, Figma"],
+    ["Henry Clark", 29, "Blockchain Developer", "Miami", "Solidity, Ethereum, Smart Contracts"],
+    ["Ivy Adams", 24, "Game Developer", "Austin", "Unity, C#, Unreal Engine"],
+    ["Jack Thompson", 38, "Cloud Architect", "Denver", "Azure, GCP, Cloud Security"]
+]
