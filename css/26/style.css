@@ -11,7 +11,7 @@
 } */
 
 .container {
-  width:100vw;
+  width: 100vw;
   height: auto;
   overflow-x: none;
   display: flex;
@@ -48,10 +48,10 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width:100%/3;
+  width: 100%/3;
 }
 
-.nav_buttons{
+.nav_buttons {
   width: 50%;
   height: inherit;
   display: flex;
@@ -79,11 +79,34 @@ li {
   width: 100px;
   height: 40px;
   border-radius: 10px;
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
+  background-image: linear-gradient(
+    to right,
+    #ff6e7f 0%,
+    #bfe9ff 51%,
+    #ff6e7f 100%
+  );
+
+  margin: 10px;
+  /* padding: 15px 45px; */
+  text-align: center;
+  text-transform: lowercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
   font-family: "Mea Culpa", serif;
   font-weight: 900;
   font-style: normal;
   font-size: 20px;
+}
+
+.button_header:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 /* main  */
@@ -91,9 +114,10 @@ li {
   width: inherit;
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
 .section {
@@ -102,8 +126,17 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: start;
-  background-color: blueviolet;
-  margin:10px;
+  /* background-color: blueviolet; */
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  margin: 10px;
   border-radius: 10px;
 }
 
@@ -112,11 +145,10 @@ img {
   height: 200px;
   border-radius: 25%;
   margin: 30px 20px;
-
 }
-p{
+p {
   align-content: center;
-  text-align:start;
+  text-align: start;
   padding: 40px;
   font-family: "Mea Culpa", serif;
   font-weight: 400;
@@ -134,20 +166,19 @@ p{
   font-weight: 900;
   font-style: normal;
   font-size: 30px;
-  align-content:end;
+  align-content: end;
 }
 
-
-@media(min-width:926px){
- .button_header {
-  width: 100px;
-  height: 40px;
-  border-radius: 10px;
-  background-color: chartreuse;
-  font-family: "Mea Culpa", serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 20px;
-  margin: 5px;
-} 
+@media (min-width: 926px) {
+  .button_header {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: chartreuse;
+    font-family: "Mea Culpa", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 20px;
+    margin: 5px;
+  }
 }
