@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  width: 360px;
+  height: 600px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+img {
+  width: 100%;
+  height: 200px;
+  /* margin: 10px; */
+  border-radius: 10px;
+}
+
+.subscription {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+#fav_icon {
+  width: 50px;
+  height: 50px;
+}
+
+button {
+  width: 280px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 15px;
+  /* background-image: radial-gradient(
+    circle 950px at 2.5% 8%,
+    rgba(44, 103, 176, 1) 0%,
+    rgba(35, 56, 136, 1) 90%
+  ); */
+  /* background-image: linear-gradient(
+    112.3deg,
+    rgba(252, 222, 28, 1) 23%,
+    rgba(202, 178, 22, 1) 70.2%
+  ); */
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
