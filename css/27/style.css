@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Playwrite+BE+VLG+Guides&family=Playwrite+NL+Guides&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contaniner {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: space-around; */
+  justify-content: center;
+  /* background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%); */
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  /* background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); */
+  /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+  /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+  /* background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%); */
+}
+.card {
+  position: relative;
+  width: 270px;
+  /* 360 */
+  height: 450px;
+  /* 600 */
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: start;
+  gap: 3px;
+  border-radius: 10px;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+img {
+  width: 220px;
+  height: 200px;
+  /* height: 50%; */
+  /* border-radius: 50%; */
+  border-radius: 10px;
+  /* margin: 10%; */
+}
+h2 {
+  font-family: "Mea Culpa", serif;
+  font-weight: 900;
+  font-size: 30px;
+  /* font-size: 1.2rem; */
+  font-style: normal;
+  margin: 10px 20px;
+  color: #2d0346;
+  text-decoration: underline;
+}
+
+p {
+  font-family: "Mea Culpa", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 10px 20px;
+  color: rgb(243, 221, 96);
+}
