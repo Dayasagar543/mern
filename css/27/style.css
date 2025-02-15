@@ -27,7 +27,7 @@
   /* 360 */
   height: 450px;
   /* 600 */
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -37,6 +37,11 @@
   gap: 3px;
   border-radius: 10px;
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.card:hover {
+  /* box-shadow: 7px 7px 6.5px rgb(36, 35, 35) ,-7px -7px 6.5px rgb(44, 43, 43); */
+  box-shadow: 7px 7px 6.5px rgb(36, 35, 35);
 }
 
 img {
