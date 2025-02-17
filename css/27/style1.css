@@ -6,7 +6,7 @@
 
 .container {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,8 +24,9 @@
   gap: 20px;
   border-radius: 15px;
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  margin: 200px;
 }
-img {
+#card_img {
   width: 100%;
   height: 200px;
   /* margin: 10px; */
@@ -55,6 +56,7 @@ img {
   color: rgb(13, 117, 187);
 }
 #fav_icon {
+  border-radius: 5px;
   width: 50px;
   height: 50px;
 }
