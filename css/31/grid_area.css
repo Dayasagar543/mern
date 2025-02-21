@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+  /* justify-content: center;
+  align-items: center; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* gap: 5px; */
+  grid-template-areas:
+    "Header Header Header"
+    "Siderbar content1 content1"
+    "Siderbar content2 content3"
+    "Footer Footer Footer";
+    gap: 5px;
+    /* margin: 0.5rem; */
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  text-align: center;
+  align-content: center;
+}
+
+.Header {
+  grid-area: Header;
+}
+.Siderbar {
+  grid-area: Siderbar;
+}
+.content1 {
+  grid-area: content1;
+}
+.content2 {
+  grid-area: content2;
+}
+.content3 {
+  grid-area: content3;
+}
+.Footer {
+  grid-area: Footer;
+}
