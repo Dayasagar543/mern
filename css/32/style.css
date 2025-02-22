@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  /* height: 100%; */
+  height: 100vh;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  grid-template-rows: repeat(auto-fit, 1fr);
+  /* align-items: center;
+  justify-content: center; */
+  place-items: center;
+  gap: 2.5rem;
+  background-color: rgb(127, 255, 127);
+  padding: 5rem;
+}
+
+.item {
+  /* width: 200px;
+  height: 200px; */
+  height: 100%;
+  width: 100%;
+  background-color: rgb(222, 69, 236);
+  text-align: center;
+  place-content: center;
+  padding: 2rem;
+}
+
+.items1:hover {
+  /* rotate:x*/
+  transform: rotateX(45deg);
+}
+.items2:hover {
+  /* rotate:y */
+  transform: rotateY(45deg);
+}
+.items3:hover {
+  /* rotate:z */
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  transform: rotateZ(45deg);
+}
+.items4:hover {
+  /* translate:x */
+  transform: translateX(100PX);
+}
+.items5:hover {
+    /* translate:y */
+    height: 50px;
+    width: 50px;
+   text-align: center;
+    transform: translateY(100PX);
+}
+.items6:hover {
+    /* translate:z */
+    transform:perspective(700PX) translateZ(100PX);
+}
+.items7:hover {
+    /* scale:x */
+    transform: scaleX(0.8)
+}
+.items8:hover {
+  /* scale:y */
+  transform: scaleY(1.2)
+}
+.items9:hover {
+  /* scale:z */
+  transform: perspective(300px) rotateY(-45deg) scale(1.5);
+}
