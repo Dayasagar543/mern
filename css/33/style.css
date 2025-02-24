@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Markazi+Text:wght@400..700&family=Mea+Culpa&family=Playwrite+BE+VLG+Guides&family=Playwrite+NL+Guides&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-decoration: none;
+}
+
+header {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* background-image: linear-gradient(
+    to top,
+    #dbdcd7 0%,
+    #dddcd7 24%,
+    #e2c9cc 30%,
+    #e7627d 46%,
+    #b8235a 59%,
+    #801357 71%,
+    #3d1635 84%,
+    #1c1a27 100%
+  ); */
+  /* background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%); */
+}
+.header_container {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  /* justify-content: space-evenly; */
+  justify-content: space-between;
+  align-items: center;
+  /* background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%); */
+  /* background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%); */
+  /* background: #C9CCD3; */
+  /* background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+ background-blend-mode: lighten; */
+  /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
+  /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+  /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+  /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+  /* background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%); */
+}
+
+#dashboard {
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#dashboard_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+#dashboard_para {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: medium;
+  font-weight: 600;
+}
+
+#contactus {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid rgb(166, 130, 223); */
+  color: white;
+  background-color: rgb(157, 62, 235);
+  width: 100px;
+  height: 50%;
+  align-items: center;
+  margin: 20px;
+  border-radius: 7px;
+}
