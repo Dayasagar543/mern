@@ -66,13 +66,20 @@ header {
 }
 
 nav {
-  width: 40%;
+  width: 60%;
   height: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   font-size: medium;
   font-weight: 600;
+}
+
+.nav_anchor{
+  color: rgb(95, 112, 160);
+}
+.nav_anchor:hover{
+  color: rgb(157, 62, 235);
 }
 
 #contactus {

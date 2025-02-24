@@ -24,7 +24,7 @@ body {
   justify-content: center; */
   place-items: center;
   gap: 2.5rem;
-  background-color: rgb(127, 255, 127);
+  background-color: rgb(16, 122, 163);
   padding: 5rem;
 }
 
@@ -33,7 +33,7 @@ body {
   height: 200px; */
   height: 100%;
   width: 100%;
-  background-color: rgb(222, 69, 236);
+  background-color: rgb(233, 126, 243);
   text-align: center;
   place-content: center;
   padding: 2rem;
