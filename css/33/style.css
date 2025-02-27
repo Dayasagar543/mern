@@ -159,9 +159,9 @@ nav {
 }
 
 /* ----------------------main------------------------------ */
-main{
+main {
   width: 100vw;
-  height: 88vh;
+  height: auto;
   display: flex;
   justify-content: center;
 }
@@ -174,29 +174,90 @@ main{
 }
 .main_section {
   display: flex;
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 32rem;
   justify-content: center;
   align-items: center;
-  margin: 10%;
+  margin: 5% 10%;
 }
-.content_left{
-  width: 50%;
-  height:inherit;
+
+.content_left {
+  width: 45%;
+  height: inherit;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: start;
   margin: 5%;
 }
 
+.section_label,
+.section_heading{
+   margin: 10px 1px;
+}
+
+.section_description{
+  margin: 70px 5px;
+}
+
 .content_right {
-  width: 50%;
+  width: 45%;
+  height: 90%;
   height: inherit;
   margin: 5%;
 }
 
+.button_group {
+  display: flex;
+  justify-content: start;
+}
+
+#start_now,
+#take_tour {
+  width: 6rem;
+  height: 2.5rem;
+  border: 1px solid black;
+  text-align: center;
+  align-content: center;
+  border-radius: 0.5rem;
+  background-color: rgb(135, 128, 241);
+  margin: 5px;
+}
+
+#take_tour:hover {
+  box-shadow: 2px 1px 1.5px rgb(144, 72, 240);
+}
+
+#start_now:hover {
+  box-shadow: 2px 1px 1.5px rgb(144, 72, 240);
+}
+
 #right_image {
-  width:100%;
+  width: 100%;
   height: 100%;
   border-radius: 5%;
+}
+
+@media screen and (max-width: 926px) {
+  .main_section {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+  }
+
+  .button_group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #start_now,
+  #take_tour {
+    width: 90%;
+  }
 }
