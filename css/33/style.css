@@ -8,6 +8,7 @@
   font-optical-sizing: auto;
   font-style: normal;
   text-decoration: none;
+  overflow-x: none;
 }
 
 /* ------------ header --------------- */
@@ -164,71 +165,88 @@ main {
   height: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .main_container {
-  width: 90%;
-  height: inherit;
+  width: 70vw;
+  height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .main_section {
+  width: 70vw;
+  height: auto;
   display: flex;
-  width: 80%;
-  height: 32rem;
-  justify-content: center;
+  justify-content: space-around;
+  /* align-items: start; */
   align-items: center;
-  margin: 5% 10%;
 }
 
+/* left container */
 .content_left {
-  width: 45%;
-  height: inherit;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  margin: 5%;
+  width: 40%;
+  height: 60rem;
+  margin-top: 10rem;
 }
 
-.section_label,
-.section_heading{
-   margin: 10px 1px;
+.section_label {
+  margin: 5px 0%;
+  color: purple;
+  font-family: "Mea Culpa", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+}
+.section_heading {
+  margin: 10px 0% 10% 0%;
 }
 
-.section_description{
-  margin: 70px 5px;
+.section_heading {
+  font-size: 4rem;
 }
 
+.section_description {
+  font-size: 1.25rem;
+  margin: 0% 0%;
+  color: rgb(114, 112, 112);
+}
+
+/* right container  */
 .content_right {
-  width: 45%;
-  height: 90%;
-  height: inherit;
-  margin: 5%;
+  width: 40%;
+  height: 60rem;
+  /* margin: 5%; */
 }
 
 .button_group {
   display: flex;
   justify-content: start;
+  margin: 10% 0%;
 }
 
 #start_now,
 #take_tour {
   width: 6rem;
   height: 2.5rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  color: white;
   text-align: center;
   align-content: center;
   border-radius: 0.5rem;
   background-color: rgb(135, 128, 241);
-  margin: 5px;
+  margin: 5%;
 }
 
 #take_tour:hover {
   box-shadow: 2px 1px 1.5px rgb(144, 72, 240);
+  color: none;
 }
 
 #start_now:hover {
   box-shadow: 2px 1px 1.5px rgb(144, 72, 240);
+  color: none;
 }
 
 #right_image {
@@ -240,13 +258,14 @@ main {
 @media screen and (max-width: 926px) {
   .main_section {
     display: flex;
+    flex-direction: column;
     width: 90%;
     height: 90%;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     margin: 10%;
     /* flex-wrap: wrap; */
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .button_group {
@@ -259,5 +278,12 @@ main {
   #start_now,
   #take_tour {
     width: 90%;
+  }
+
+  .content_right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
