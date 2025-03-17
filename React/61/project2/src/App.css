@@ -1,0 +1,10 @@
+
+
+/* .app_div{
+   
+} */
+
+.app_cards {
+  display: flex;
+  flex-wrap: wrap;
+}

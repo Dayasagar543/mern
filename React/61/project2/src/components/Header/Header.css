@@ -1,0 +1,10 @@
+header {
+  width: 70vw;
+}
+
+#component_heading {
+  font-size: 7rem;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  padding: 0.5rem auto;
+  text-align: center;
+}
