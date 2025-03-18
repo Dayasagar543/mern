@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Markazi+Text:wght@400..700&family=Mea+Culpa&family=Playwrite+BE+VLG+Guides&family=Playwrite+NL+Guides&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  width: 10rem;
+  height: 4rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 22px;
+}
+
+a{
+  text-decoration: none;
+  margin: 1.5rem;
+  /* border: 2px solid black; */
+  padding: 1rem;
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
