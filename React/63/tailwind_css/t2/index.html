@@ -7,16 +7,24 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-     <header>
-      <nav>
+     <header class="absoulte  h-screen w-screen">
+      <nav class="relative  h-screen w-screen">
         <!-- tail wind css is the utility first css frame work -->
-        <ul class=" grid grid-cols-3 grid-rows-1 gap-3 h-screen w-screen items-center mx-2">
-          <li class="bg-orange-400  text-center h-[30rem] font-bold text-3xl ">orange</li>
-          <li class="bg-yellow-400 text-center h-[30rem] font-bold text-3xl ">yellow</li>
-          <li class="bg-red-400 text-center h-[30rem] font-bold text-3xl ">red</li>
-          <li class="bg-blue-400 text-center h-[30rem] font-bold text-3xl  py-4 ">blue</li>
-          <li class="bg-purple-600 text-center h-[30rem] font-bold text-3xl text-red-300 py-5 ">purple</li>
-          <li class="bg-slate-600  text-center h-[30rem] font-bold text-3xl  py-2.5">grey</li>
+        <ul class=" grid grid-cols-3 grid-rows-1 gap-3 h-screen w-screen items-center inset-0">
+          <li class="bg-orange-400  text-center h-[30rem]  max-w-full font-bold text-3xl mx-0.5 my-0.5 content-center ">orange</li>
+          <li class="bg-yellow-400 text-center h-[30rem]  max-w-full font-bold text-3xl mx-0.5 my-0.5 content-center ">yellow</li>
+          <li class="bg-red-400 text-center h-[30rem]  max-w-full font-bold text-3xl mx-0.5 my-0.5 content-center ">red</li>
+          <li class="bg-blue-400 text-center h-[30rem]  max-w-full font-bold text-3xl mx-0.5 my-0.5 content-center  ">blue</li>
+          <li class="bg-purple-600 text-center h-[30rem]  max-w-full font-bold text-3xl mx-0.5 my-0.5 content-center text-red-300  ">purple</li>
+          <li class="bg-slate-600  text-center h-[30rem]  max-w-full font-bold text-3xl mx-0.5 my-0.5 content-center">grey</li>
+        </ul>
+        <ul class="flex flex-row justify-around mx-1 my-2">
+          <li class="bg-orange-400  text-center min-h-10/12 font-bold text-3xl w-3xs mx-0.5 my-2  py-3 content-center ">orange</li>
+          <li class="bg-yellow-400 text-center min-h-10/12 font-bold text-3xl w-3xs mx-0.5 my-2  py-3 content-center ">yellow</li>
+          <li class="bg-red-400 text-center min-h-10/12 font-bold text-3xl w-3xs mx-0.5 my-2  py-3 content-center ">red</li>
+          <li class="bg-blue-400 text-center min-h-10/12 font-bold text-3xl w-3xs mx-0.5 my-2  py-3 content-center  ">blue</li>
+          <li class="bg-purple-600 text-center min-h-10/12 font-bold text-3xl w-3xs mx-0.5 my-2  py-3 content-center text-red-300 ">purple</li>
+          <li class="bg-slate-600  text-center min-h-10/12 font-bold text-3xl w-3xs mx-0.5 my-2  py-3 content-center  ">grey</li>
         </ul>
       </nav>
      </header>
