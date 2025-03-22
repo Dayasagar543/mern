@@ -1,0 +1,22 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.app_heading_container {
+  width: inherit;
+  height: 10vh;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  align-content: center;
+  text-align: center;
+}
+/* .app_heading {
+} */
+
+.card_container {
+  height: 90vh ;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
