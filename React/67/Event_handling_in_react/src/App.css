@@ -1,0 +1,15 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.button{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5px;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
