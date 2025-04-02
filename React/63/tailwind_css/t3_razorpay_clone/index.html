@@ -8,9 +8,9 @@
   </head>
 
   <body
-    class="flex flex-col bg-white justify-between items-center w-screen h-screen"
+    class="flex flex-col bg-white justify-start items-center w-screen h-[400vh] absolute overflow-x-hidden"
   >
-    <header class="w-full h-[6rem] bg-deepBlue">
+    <header class="w-full h-[6rem] bg-deepBlue relative">
       <!-- <div class="w-full flex justify-center items-center bg-white h-[4rem]">
         <h3 class="text-black mx-5 font-bold">Raspor pay 3 clicks away</h3>
         <button
@@ -26,6 +26,7 @@
           <div class="w-[10%] h-[inherit] flex justify-center items-center">
             <a href="#"
               ><img
+                loading="lazy"
                 class="w-[8rem] h-[3rem] my-[1rem]"
                 src="./images/rasorpay.png"
                 alt="rasporpay_logo"
@@ -133,6 +134,7 @@
 
             <div class="">
               <img
+                loading="lazy"
                 class="w-[3rem] h-[rem]"
                 src="./images/India_flag.png"
                 alt=""
@@ -149,7 +151,7 @@
               class="bg-white text-blue-500 w-[6rem] h-[3rem] flex justify-around items-center font-bold rounded-sm hover:text-blue-400"
             >
               signup
-              <!-- <img
+              <!-- <img loading="lazy"
                 class="w-0.5rem bg-blue-400"
                 src="./images/right_arrow.png"
                 alt="arrow"
@@ -160,10 +162,12 @@
       </nav>
     </header>
     <main
-      class="text-center align-middle mx-auto text-blue-700 bg-deepBlue w-full h-full"
+      class="text-center align-middle mx-auto text-blue-700 bg-deepBlue w-full h-[80vh] relative"
     >
       <div class="flex justify-between items-start w-[60%] mx-auto h-full">
-        <section class="flex flex-col w-[40%] text-left h-[50%] justify-around my-22">
+        <section
+          class="flex flex-col w-[40%] text-left h-[50%] justify-around my-22"
+        >
           <h1 class="font-extrabold text-white text-5xl text-left w-full">
             Power your finance,grow your business
           </h1>
@@ -180,18 +184,56 @@
         </section>
         <section class="w-[60%] my-auto">
           <img
+            loading="lazy"
             class="w-[90%] h-[70%] rounded-[5px] mx-auto"
             src="/images/rasorpay_banner.png"
             alt=""
           />
         </section>
       </div>
-      <div class="w-full bg-white h-[40px]">
-        <img src="" alt="" />
-      </div>
+      <section class="h-[100vh] w-12/12 text-black">
+        <!-- left image -->
+        <img loading="lazy" src="" alt="" />
+        <!-- the section values -->
+        <div>
+          <!-- heading -->
+
+          <div
+            class="w-full bg-white h-[15vh] font-bold text-black text-2xl flex items-center justify-center font-inter"
+          >
+            <h1>Accept Payments with Razorpay Payment Suite</h1>
+          </div>
+          <div></div>
+          <!-- contentbox -->
+          <div>
+            <!-- left box -->
+            <div>
+              <!-- heading -->
+              <h2></h2>
+              <!-- unorder list -->
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div><button>Sign Up Now</button><a href="">Know more</a></div>
+            </div>
+            <!-- right box -->
+            <div>
+              <img loading="lazy" src="" alt="" />
+            </div>
+          </div>
+        </div>
+        F
+        <!-- right image -->
+        <img loading="lazy" src="" alt="" />
+      </section>
     </main>
     <footer
-      class="w-full h-[10rem] flex justify-center items-center bg-blue-500"
+      class="w-full h-[10rem] flex justify-center items-center bg-white-500"
     >
       This is a footer
     </footer>
