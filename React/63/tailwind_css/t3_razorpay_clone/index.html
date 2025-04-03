@@ -7,10 +7,8 @@
     <title>Razor pay clone</title>
   </head>
 
-  <body
-    class="flex flex-col bg-white justify-start items-center w-screen h-[400vh] absolute overflow-x-hidden"
-  >
-    <header class="w-full h-[6rem] bg-deepBlue relative">
+  <body class="w-screen h-full overflow-x-hidden absolute">
+    <header class="w-full h-[6rem] bg-deepBlue relative my-0">
       <!-- <div class="w-full flex justify-center items-center bg-white h-[4rem]">
         <h3 class="text-black mx-5 font-bold">Raspor pay 3 clicks away</h3>
         <button
@@ -162,7 +160,7 @@
       </nav>
     </header>
     <main
-      class="text-center align-middle mx-auto text-blue-700 bg-deepBlue w-full h-[80vh] relative"
+      class="text-center align-middle mx-auto text-blue-700 bg-deepBlue w-full h-[80vh]"
     >
       <div class="flex justify-between items-start w-[60%] mx-auto h-full">
         <section
@@ -191,23 +189,22 @@
           />
         </section>
       </div>
-      <section class="h-[100vh] w-12/12 text-black">
+      <section class="h-[100vh] w-12/12 text-black bg-blue-400 text-white relative">
         <!-- left image -->
-        <img loading="lazy" src="" alt="" />
+        <img loading="lazy" src="./images/dotted.jpg" alt="" class=" absolute top-1 left-2.5"/>
+        <img loading="lazy" src="./images/dotted.jpg" alt="" class=" absolute right-1 top-[4.5rem]" />
         <!-- the section values -->
-        <div>
+        <div class="flex items-center justify-center flex-col">
           <!-- heading -->
-
           <div
-            class="w-full bg-white h-[15vh] font-bold text-black text-2xl flex items-center justify-center font-inter"
+            class="w-full bg-white font-bold text-black text-2xl flex items-center justify-center font-inter"
           >
             <h1>Accept Payments with Razorpay Payment Suite</h1>
           </div>
-          <div></div>
-          <!-- contentbox -->
-          <div>
+          <div class="w-[2rem] h-1.5 bg-green-400 text-center"></div>
+          <div class="flex">
             <!-- left box -->
-            <div>
+            <div class="w-[50%] h-[100%]">
               <!-- heading -->
               <h2></h2>
               <!-- unorder list -->
@@ -219,23 +216,23 @@
                 <li></li>
                 <li></li>
               </ul>
-              <div><button>Sign Up Now</button><a href="">Know more</a></div>
+              <div>
+                <button class="bg-blue-600 w-[10rem] h-[3rem] rounded-sm">
+                  Sign Up Now</button
+                ><a href="" class="mx-2 text-blue-500">Know more</a>
+              </div>
             </div>
             <!-- right box -->
             <div>
               <img loading="lazy" src="" alt="" />
             </div>
           </div>
+          <!-- contentbox -->
         </div>
-        F
+
         <!-- right image -->
         <img loading="lazy" src="" alt="" />
       </section>
     </main>
-    <footer
-      class="w-full h-[10rem] flex justify-center items-center bg-white-500"
-    >
-      This is a footer
-    </footer>
   </body>
 </html>
