@@ -8,20 +8,36 @@ import Authentication from "./components/pages/authentication/Authentication";
 import Page_not_found from "./components/pages/page_not_found/Page_not_found";
 import Params from "./components/snippets/params/Params";
 
+import Navbar from "./components/snippets/navbar/Navbar";
 import "./App.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: (
+      <div>
+        <Home />
+        <Navbar />
+      </div>
+    ),
   },
   {
     path: "/dashboard/",
-    element: <Dashboard />,
+    element: (
+      <div>
+        <Dashboard />
+        <Navbar />
+      </div>
+    ),
     children: [
       {
         path: "courses",
-        element: <Courses />,
+        element: (
+          <div>
+            <Courses />,
+            <Navbar />
+          </div>
+        ),
       },
       {
         path: "courses/:id",
@@ -39,15 +55,30 @@ const router = createBrowserRouter([
   },
   {
     path: "/about",
-    element: <About />,
+    element: (
+      <div>
+        <About />,
+        <Navbar />
+      </div>
+    ),
   },
   {
     path: "/contactus",
-    element: <Contactus />,
+    element: (
+      <div>
+        <Contactus />,
+        <Navbar />
+      </div>
+    ),
   },
   {
     path: "/auth",
-    element: <Authentication />,
+    element: (
+      <div>
+        <Authentication />,
+        <Navbar />
+      </div>
+    ),
   },
   {
     path: "*",
