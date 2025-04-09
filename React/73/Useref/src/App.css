@@ -1,0 +1,9 @@
+.view_pane {
+  width: 100vw;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+button {
+  background-color: rgb(255, 153, 127);
+}
