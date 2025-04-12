@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-image: linear-gradient(
+    to right,
+    #ff6e7f 0%,
+    #bfe9ff 51%,
+    #ff6e7f 100%
+  );
+
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(20, 14, 14);
+  box-shadow: 0 0 20px #eee;
+  display: block;
+
+  /* font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal; */
+
+  /* font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal; */
+}
+
+:hover {
+  background-position: right center; /* change the direction of the change here */
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1rem;
+  margin: auto;
+  width: 100%;
+  display: block;
+}
+
+.user_specific {
+  display: flex;
+  height: 20vh;
+  margin: 1rem 1rem;
+}
+.user_input {
+  width: 60%;
+  height: 60%;
+  margin: auto;
+  font-size: 1.5rem;
+}
+#user_input {
+  width: 90%;
+  height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+.button {
+  width: 30%;
+  height: 60%;
+  margin: auto;
+  padding: 2px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+.stats {
+  /* background-color: white;
+  border: 2px solid black; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.piechats {
+  /* background-color: white;
+  border: 2px solid black; */
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  /* display:none; */
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  margin: 0.5rem;
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  /* background-color: #ff6e7f; */
+  border: 10px solid greenyellow;
+
+  background: conic-gradient();
+}
+.rectangular_charts {
+  background-color: white;
+  border: 2px solid black;
+  height: 40%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* .rectangle {
+  text-align: center;
+  align-content: center;
+  background-color: rebeccapurple;
+} */
