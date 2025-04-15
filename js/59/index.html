@@ -19,17 +19,21 @@
             placeholder="enteryour id or user name"
           />
         </div>
-        <div class="button"><button>Search</button></div>
+        <div class="button" id="Search"><button>Search</button></div>
       </div>
-      <div class="stats">
+      <div class="stats_container">
         <div class="piechats">
-          <div class="circle">Easy</div>
-          <div class="circle">Medium</div>
-          <div class="circle">Hard</div>
+          <div class="easy_progress_item circle">
+            <span id="easy_label">Easy</span>
+          </div>
+          <div class="medium_progress_item circle">
+            <span id="medium_label">Medium</span>
+          </div>
+          <div class="hard_progress_item circle">
+            <span id="hard_label">Hard</span>
+          </div>
         </div>
-        <div class="rectangular_charts">
-          will be populated by the data form the api
-        </div>
+        <div class="stats_card">will be populated by the data form the api</div>
       </div>
     </div>
     <script type="module" src="./index.js"></script>

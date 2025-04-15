@@ -74,7 +74,6 @@ h1 {
   height: 60%;
   margin: auto;
   padding: 2px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +84,7 @@ button {
   font-size: 1.5rem;
   border-radius: 5px;
 }
-.stats {
+.stats_container {
   /* background-color: white;
   border: 2px solid black; */
   width: 100%;
@@ -117,13 +116,15 @@ button {
   align-content: center;
   /* background-color: #ff6e7f; */
   border: 10px solid greenyellow;
-
-  background: conic-gradient();
+  background: conic-gradient(
+    rgb(231, 97, 120) var(--progress_degree, 40%),
+    yellow 0%
+  );
 }
-.rectangular_charts {
-  background-color: white;
+.stats_card {
+  background-color: inherit;
   border: 2px solid black;
-  height: 40%;
+  height: 100%;
   width: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
