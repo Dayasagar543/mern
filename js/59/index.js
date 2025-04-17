@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
     label.textContent = `${solved}/${total}`;
   };
   const display_userdata = (Parseddata) => {
-    let data = Parseddata;
-    console.log(data);
+    // let data = Parseddata;
+    // console.log(data);
     let total_questions = Parseddata.totalQuestions;
     let total_solved = Parseddata.totalSolved;
     let total_easy = Parseddata.totalEasy;
@@ -102,8 +102,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
     } catch (error) {
       stats_container.innerHTML = `<p>${error.message}</p>`;
     } finally {
-      button.textContent = "search";
       button.disabled = false;
+      button.style.border="2px solid black";
+      button.textContent = "search";
     }
   };
   //button functionality
