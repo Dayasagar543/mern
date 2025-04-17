@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", (e) => {
-  e.preventDefault();
   //input and search
   let user_input = document.getElementById("user_input");
   let button = document.getElementById("Search");
@@ -67,6 +66,24 @@ document.addEventListener("DOMContentLoaded", (e) => {
       hard_progress_label,
       hard_progress
     );
+
+    const cardData = [
+      { label: "total Submissions", value: Parseddata.totalSolved },
+      { label: "total_easy_solved", value: Parseddata.easySolved },
+      { label: "total_medium_solved", value: Parseddata.mediumSolved },
+      { label: "total_hard_solved", value: Parseddata.hardSolved },
+    ];
+    // console.log(cardData);
+
+    stats_card_container.innerHTML = cardData
+      .map((element) => {
+        return `
+     <div class="card">
+      <p>${element.label}:${element.value}</p>
+     </div>
+    `;
+      })
+      .join("");
   };
 
   const Fetch_data = async (user_name) => {
@@ -90,8 +107,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     }
   };
   //button functionality
-  button.addEventListener("click", (e) => {
-    e.preventDefault();
+  button.addEventListener("click", () => {
     let user_name = user_input.value;
     // console.log(user_name);
     if (validation(user_name)) {
