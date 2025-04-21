@@ -4,32 +4,63 @@ import "./App.css";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Pastes from "./components/pastes/Pastes";
-import Home from "./components/home/Home";
+import Navbar from "./components/navbar/Navbar";
+import Viewpaste from "./components/viewpastes/Viewpaste";
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
-    children: [],
+    element: (
+      <div>
+        <Navbar />
+        <Home />
+      </div>
+    ),
   },
   {
     path: "/about",
-    element: <About />,
+    element: (
+      <div>
+        <Navbar />
+        <About />
+      </div>
+    ),
   },
+
   {
     path: "/pastes",
-    element: <Pastes />,
+    element: (
+      <div>
+        <Navbar />
+        <Pastes />
+      </div>
+    ),
   },
   {
     path: "/pastes/:id",
-    element: <App />,
+    element: (
+      <div>
+        <Navbar />
+        <Viewpaste />
+      </div>
+    ),
+  },
+  {
+    path: "*",
+    element: (
+      <div>
+        <Navbar />
+        <h1 className="text-2rem">Page not found</h1>
+      </div>
+    ),
   },
 ]);
 
 function App() {
   return (
     <div className="w-full h-full">
-      <h1 className="mx-auto  text-red-400 text-center">
-        Hail to the king of kings
+      <h1 className="mx-auto  text-black text-center ">
+        {/* Hail to the king of kings */}
         <RouterProvider router={router} />
       </h1>
     </div>
