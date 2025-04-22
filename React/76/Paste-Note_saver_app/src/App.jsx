@@ -59,10 +59,8 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="w-full h-full">
-      <h1 className="mx-auto  text-black text-center ">
-        {/* Hail to the king of kings */}
-        <RouterProvider router={router} />
-      </h1>
+      {/* Hail to the king of kings */}
+      <RouterProvider router={router} />
     </div>
   );
 }
