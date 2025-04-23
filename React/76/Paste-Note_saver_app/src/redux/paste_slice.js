@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 import toast from "react-hot-toast";
 const initialState = {
   pastes: localStorage.getItem("pastes")
@@ -7,7 +8,7 @@ const initialState = {
 };
 
 export const pasteSlice = createSlice({
-  name: "pastes",
+  name: "paste",
   initialState,
   reducers: {
     addToPastes: (state, action) => {
@@ -16,9 +17,37 @@ export const pasteSlice = createSlice({
       localStorage.setItem("pastes", JSON.stringify(state.pastes));
       toast("paste created successfully");
     },
-    updateToPastes: (state, action) => {},
-    resetAllPastes: (state, action) => {},
-    removeFrompastes: (state, action) => {},
+    updateToPastes: (state, action) => {
+      const paste = action.payload;
+      const index = state.pastes.findIndex((item) => {
+        item.id === paste.id;
+      });
+
+      if (index >= 0) {
+        state.pastes[index] = paste;
+        localStorage.setItem("pastes", JSON.stringify(state.pastes));
+      }
+
+      toast.success("paste updated successfully");
+    },
+    resetAllPastes: (state, action) => {
+      state.pastes = [];
+      localStorage.removeItem("pastes");
+      toast("paste reseted all successfully");
+    },
+    removeFrompastes: (state, action) => {
+      const paste = action.payload;
+      console.log(paste);
+      const index = state.pastes.findIndex((item) => {
+        item.id == paste.id;
+      });
+
+      if (index >= 0) {
+        state.pastes.Splice(index, 1);
+      }
+      localStorage.setItem("pastes", JSON.stringify(state.pastes));
+      toast("paste removed successfully");
+    },
   },
 });
 

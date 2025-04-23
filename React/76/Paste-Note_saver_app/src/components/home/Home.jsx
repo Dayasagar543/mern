@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import{ updateToPastes,addToPastes} from "../../redux/paste_slice";
+import { updateToPastes, addToPastes } from "../../redux/paste_slice";
 const Home = () => {
   const [title, setTitle] = useState("");
   const [value, setValue] = useState("");
@@ -20,7 +20,7 @@ const Home = () => {
     const paste = {
       title: title,
       content: value,
-      id: pasteId || Date.now().toString(Math.random() * 100),
+      id: pasteId || Date.now().toString(36),
       create_on: new Date().toISOString(),
     };
 
@@ -35,8 +35,7 @@ const Home = () => {
     //clearing the state
     setTitle("");
     setValue("");
-    useSearchParams({})
-
+    setSearchParams({});
   };
 
   return (
