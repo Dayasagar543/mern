@@ -37,11 +37,12 @@ export const pasteSlice = createSlice({
     },
     removeFrompastes: (state, action) => {
       const paste = action.payload;
+      console.log(paste)
       console.log(paste);
       const index = state.pastes.findIndex((item) => {
         item.id == paste.id;
       });
-
+      console.log(index);
       if (index >= 0) {
         state.pastes.Splice(index, 1);
       }
