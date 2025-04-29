@@ -1,33 +1,14 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+// importing the item router file
+const api=require('./routes/item')
 
-// app.get("/", (req, res) => {
-//   res.send("hellow world!");
-// });
-app.get("/", (req, res) => {
-  res.sendFile('./index.html')
-});
 
-// requests
+app.use('/api',api)
 
-// get requests
-app.get("/home", (req, res) => {
-  res.send("hi there ");
-});
 
-app.put("/items/:id", (req, res) => {
-  res.send("got a put request");
-});
 
-app.post("/items/:id", (req, res) => {
-  res.send("got a post request");
-});
-
-app.delete("/items/:id", (req, res) => {
-  res.send("got a delete request");
-});
-
-app.listen(port, () => {
-  console.log(`dev  app listening on port ${port}`);
-});
+app.listen(port,()=>{
+  console.log(`listening the port ${port}`)
+})
