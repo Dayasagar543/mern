@@ -1,0 +1,3 @@
+installing mongodb in the local env
+using mongodb compass gui too to interact with mongodb and mongosh in the cmd .
+using the atlas online cloud environment and connecting with the mongodb compass
