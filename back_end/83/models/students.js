@@ -1,7 +1,6 @@
-const mongoose = require("mongoose");
-mongoose.connect(process.env.CONNECTION_STRING);
+const { Schema, model } = require("mongoose");
 
-const Student = new mongoose.Schema({
+const Student = new Schema({
   name: {
     type: String,
     require: true,
@@ -11,12 +10,15 @@ const Student = new mongoose.Schema({
     require: true,
   },
   gender: {
-    type: Enumerator,
+    type: String,
     require: true,
   },
-  date: new Date().getDate,
+  date: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
-const student = new mongoose.model("student",Student)
+const student = model("student", Student);
 
 module.exports = student;
