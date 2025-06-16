@@ -11,11 +11,12 @@ function App() {
     width: "100vw",
     height: "100vh",
   };
+
   return (
-    <div className="app">
+    <div className="app w-full h-full flex justify-center">
       {/* created the context provider */}
       <Theme.Provider value={{ theme, setTheme }}>
-        <div>
+        <div className="flex justify-center">
           <ChildA style={style} />
         </div>
       </Theme.Provider>
