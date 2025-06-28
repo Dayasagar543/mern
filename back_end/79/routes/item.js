@@ -14,7 +14,8 @@ router.get("/", (req, res) => {
 // get requests
 router.get("/home", (req, res) => {
   // res.send("hi there ");
-  res.json({ x: 21, y: "damaris", z: 32 });
+  // res.json({ x: 21, y: "damaris", z: 32 });
+  res.sendFile("./data.html", { root: __dirname });
 });
 
 router.put("/items/:id", (req, res) => {
