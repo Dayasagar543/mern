@@ -4,6 +4,7 @@ l<!DOCTYPE html>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./main.css" />
+
     <title>Razor pay clone</title>
   </head>
 
@@ -160,7 +161,7 @@ l<!DOCTYPE html>
       </nav>
     </header>
     <main
-      class="text-center align-middle mx-auto text-blue-700 bg-deepBlue w-full h-[80vh]"
+      class="text-center align-middle mx-auto text-blue-700 bg-deepBlue w-full h-full"
     >
       <div class="flex justify-between items-start w-[60%] mx-auto h-full">
         <section
@@ -222,21 +223,41 @@ l<!DOCTYPE html>
               class="flex-col justify-around w-[50%] p-[2rem] h-[50%] border-2 text-left"
             >
               <!-- heading -->
-              <h2 class="text-black font-bold text-left text-3xl my-3 py-2">
+              <h2 class="text-black font-bold text-left text-[25px] my-3 py-2">
                 Supercharge your business with the all-powerful
                 <span class="text-blue-500">Payment Gateway</span>
               </h2>
               <!-- unorder list -->
               <ul class="text-[20px] text-left py-2 px-1.5">
-                <li class="text-black p-1">100+ Payment Methods</li>
-                <li class="text-black p-1">Industry Leading Success Rate</li>
-                <li class="text-black p-1">Superior Checkout Experience</li>
-                <li class="text-black p-1">Easy to Integrate</li>
-                <li class="text-black p-1">Instant Settlements from day 1</li>
-                <li class="text-black p-1">In-depth Reporting and Insights</li>
+                <li class="text-black p-1 flex items-center">
+                  <p>100+ Payment Methods</p>
+                </li>
+                <li class="text-black p-1 flex items-center mx-2">
+                  <i data-feather="check" class="text-green-300"></i>
+                  <p>Industry Leading Success Rate</p>
+                </li>
+                <li class="text-black p-1 flex items-center mx-2">
+                  <i data-feather="check" class="text-green-300"></i>
+                  <p>Superior Checkout Experience</p>
+                </li>
+                <li class="text-black p-1 flex items-center mx-2">
+                  <i data-feather="check" class="text-green-300"></i>
+                  <p>Easy to Integrate</p>
+                </li>
+                <li class="text-black p-1 flex items-center mx-2">
+                  <i data-feather="check" class="text-green-300"></i>
+                  <p>Instant Settlements from day One</p>
+                </li>
+                <li class="text-black p-1 flex items-center mx-2">
+                  <i data-feather="check" class="text-green-300"></i>
+                  <p>In-depth Reporting and Insights</p>
+                </li>
               </ul>
               <div class="flex justify-around m-5">
-                <button onclick="" class="bg-blue-600 w-[10rem] h-[3rem] rounded-sm">
+                <button
+                  onclick=""
+                  class="bg-blue-600 w-[10rem] h-[3rem] rounded-sm"
+                >
                   Sign Up Now</button
                 ><a href="" class="mx-2 text-blue-600 content-evenly font-bold"
                   >Know more >
@@ -257,11 +278,13 @@ l<!DOCTYPE html>
         </div>
       </section>
       <!-- cards -->
-      <section>
+      <section class="w-full h-[80vh]">
         <!-- contentbox -->
-        <div class="text-black grid grid-cols-3 w-full h-full">
+        <div
+          class="text-black grid grid-cols-3 border-2 w-[60vw] h-full mx-auto flex justify-center rounded-2xl"
+        >
           <!-- card -->
-          <div>
+          <div class="border rounded-2xl h-[450px] w-[400px] mx-auto my-auto">
             <img src="" alt="" />
             <div class="">
               <h2>Payment Links</h2>
@@ -273,7 +296,7 @@ l<!DOCTYPE html>
             </div>
           </div>
           <!-- card -->
-          <div>
+          <div class="border rounded-2xl h-[450px] w-[400px] mx-auto my-auto">
             <img src="" alt="" />
             <div class="">
               <h2>Payment Links</h2>
@@ -285,7 +308,7 @@ l<!DOCTYPE html>
             </div>
           </div>
           <!-- card -->
-          <div>
+          <div class="border rounded-2xl h-[450px] w-[400px] mx-auto my-auto">
             <img src="" alt="" />
             <div class="">
               <h2>Payment Links</h2>
@@ -299,6 +322,10 @@ l<!DOCTYPE html>
         </div>
       </section>
     </main>
-    <footer>This is a footer</footer>
+    <footer class="h-[40vh]">This is a footer</footer>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

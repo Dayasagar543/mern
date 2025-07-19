@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.14",
+    "feather-icons": "^4.29.2",
     "postcss": "^8.5.3",
     "t3_razorpay_clone": "file:",
     "tailwindcss": "^4.0.14",
