@@ -8,7 +8,9 @@ l<!DOCTYPE html>
     <title>Razor pay clone</title>
   </head>
 
-  <body class="w-screen h-full overflow-x-hidden absolute">
+  <body
+    class="w-screen h-full box-border overflow-x-hidden absolute flex-col justify-evenly"
+  >
     <header class="w-full h-[6rem] bg-deepBlue relative my-0">
       <!-- <div class="w-full flex justify-center items-center bg-white h-[4rem]">
         <h3 class="text-black mx-5 font-bold">Raspor pay 3 clicks away</h3>
@@ -161,7 +163,7 @@ l<!DOCTYPE html>
       </nav>
     </header>
     <main
-      class="text-center align-middle mx-auto text-blue-700 bg-deepBlue w-full h-auto"
+      class="text-center align-middle mx-auto text-blue-700 bg-deepBlue w-full"
     >
       <div class="flex justify-between items-start w-[60%] mx-auto h-full">
         <section
@@ -190,8 +192,9 @@ l<!DOCTYPE html>
           />
         </section>
       </div>
+      <!-- accepts payments section -->
       <section
-        class="h-[100vh] w-12/12 flex justify-center bg-white text-white relative rounded-md overflow-hidden"
+        class="w-full h-full flex justify-center items-center bg-white text-white relative rounded-md overflow-hidden"
       >
         <!-- left image -->
         <img
@@ -205,96 +208,92 @@ l<!DOCTYPE html>
           loading="lazy"
           src="./images/dotted.jpg"
           alt=""
-          class="absolute right-[2rem] top-[4.5rem]"
+          class="absolute right-[0rem] top-[4.5rem]"
         />
         <!-- the section values -->
-        <section class="my-[2rem] h-[70vh] w-[full]">
-          <div class="flex-col justify-center h-full w-full">
-            <!-- heading -->
-            <div
-              class="w-full bg-white font-bold text-black text-2xl flex items-center justify-center font-inter"
-            >
-              <h1 class="mt-[3rem]">
-                Accept Payments with Razorpay Payment Suite
-              </h1>
-            </div>
+
+        <div class="flex-col justify-evenly h-full w-full">
+          <!-- heading -->
+          <div
+            class="bg-white font-bold text-black text-2xl w-[60%] mx-auto flex-col items-center justify-center font-inter"
+          >
+            <h1 class="mt-[3rem]">
+              Accept Payments with Razorpay Payment Suite
+            </h1>
             <div
               class="w-[2rem] h-1.5 bg-green-400 mx-auto my-auto mb-[3rem]"
             ></div>
+          </div>
+
+          <div
+            class="flex justify-around border-2 rounded-2xl w-[60%] h-[70vh] my-[2rem] mx-auto shadow-2xl border-gray-100"
+          >
+            <!-- left box -->
             <div
-              class="flex justify-around border-2 rounded-2xl w-[60%] h-[100%] my-[2rem] mx-auto shadow-2xl border-gray-100"
+              class="flex-col w-[50%] p-[2rem] my-auto border-2 text-left justify-center items-center"
             >
-              <!-- left box -->
-              <div
-                class="flex-col w-[50%] p-[2rem] my-auto border-2 text-left justify-center items-center"
-              >
-                <!-- heading -->
-                <h2
-                  class="text-black font-bold text-left text-[25px] my-3 py-2"
+              <!-- heading -->
+              <h2 class="text-black font-bold text-left text-[25px] my-3 py-2">
+                Supercharge your business with the all-powerful
+                <span class="text-blue-500">Payment Gateway</span>
+              </h2>
+              <!-- unorder list -->
+              <ul class="text-[20px] text-left py-2 px-1.5">
+                <li class="text-black p-1 flex items-center mx-2">
+                  <i data-feather="check" class="text-green-300"></i>
+                  <p>100+ Payment Methods</p>
+                </li>
+                <li class="text-black p-1 flex items-center mx-2">
+                  <i data-feather="check" class="text-green-300"></i>
+                  <p>Industry Leading Success Rate</p>
+                </li>
+                <li class="text-black p-1 flex items-center mx-2">
+                  <i data-feather="check" class="text-green-300"></i>
+                  <p>Superior Checkout Experience</p>
+                </li>
+                <li class="text-black p-1 flex items-center mx-2">
+                  <i data-feather="check" class="text-green-300"></i>
+                  <p>Easy to Integrate</p>
+                </li>
+                <li class="text-black p-1 flex items-center mx-2">
+                  <i data-feather="check" class="text-green-300"></i>
+                  <p>Instant Settlements from day One</p>
+                </li>
+                <li class="text-black p-1 flex items-center mx-2">
+                  <i data-feather="check" class="text-green-300"></i>
+                  <p>In-depth Reporting and Insights</p>
+                </li>
+              </ul>
+              <div class="flex justify-around m-5">
+                <button
+                  onclick=""
+                  class="bg-blue-600 w-[10rem] h-[3rem] rounded-sm flex justify-evenly items-center"
                 >
-                  Supercharge your business with the all-powerful
-                  <span class="text-blue-500">Payment Gateway</span>
-                </h2>
-                <!-- unorder list -->
-                <ul class="text-[20px] text-left py-2 px-1.5">
-                  <li class="text-black p-1 flex items-center mx-2">
-                    <i data-feather="check" class="text-green-300"></i>
-                    <p>100+ Payment Methods</p>
-                  </li>
-                  <li class="text-black p-1 flex items-center mx-2">
-                    <i data-feather="check" class="text-green-300"></i>
-                    <p>Industry Leading Success Rate</p>
-                  </li>
-                  <li class="text-black p-1 flex items-center mx-2">
-                    <i data-feather="check" class="text-green-300"></i>
-                    <p>Superior Checkout Experience</p>
-                  </li>
-                  <li class="text-black p-1 flex items-center mx-2">
-                    <i data-feather="check" class="text-green-300"></i>
-                    <p>Easy to Integrate</p>
-                  </li>
-                  <li class="text-black p-1 flex items-center mx-2">
-                    <i data-feather="check" class="text-green-300"></i>
-                    <p>Instant Settlements from day One</p>
-                  </li>
-                  <li class="text-black p-1 flex items-center mx-2">
-                    <i data-feather="check" class="text-green-300"></i>
-                    <p>In-depth Reporting and Insights</p>
-                  </li>
-                </ul>
-                <div class="flex justify-around m-5">
-                  <button
-                    onclick=""
-                    class="bg-blue-600 w-[10rem] h-[3rem] rounded-sm flex justify-evenly items-center"
-                  >
-                    Sign Up Now
-                    <i
-                      data-feather="arrow-right"
-                      class="text-white mx-"
-                    ></i></button
-                  ><a
-                    href=""
-                    class="mx-2 text-blue-600 content-evenly font-bold"
-                    >Know more>
-                  </a>
-                </div>
-              </div>
-              <!-- right box -->
-              <div class="flex content-center w-[100%] p-[2rem] h-[100%]">
-                <img
-                  width="100%"
-                  height="100%"
-                  loading="lazy"
-                  src="./images/2nd_banner_img.jpg"
-                  alt="banner2"
-                />
+                  Sign Up Now
+                  <i data-feather="arrow-right" class="text-white"></i></button
+                ><a href="" class="mx-2 text-blue-600 content-evenly font-bold flex items-center justify-evenly"
+                  >Know more
+                  <i data-feather="arrow-right" class="text-blue-600"></i>
+                </a>
               </div>
             </div>
+            <!-- right box -->
+            <div class="flex content-center w-[50%] p-[2rem] h-[100%]">
+              <img
+                width="100%"
+                height="50%"
+                loading="lazy"
+                src="./images/2nd_banner_img.jpg"
+                alt="banner2"
+              />
+            </div>
           </div>
-        </section>
+        </div>
       </section>
       <!-- cards -->
-      <section class="w-full h-[100%] mx-auto bg-white py-[2rem]">
+      <section
+        class="w-full h-full mx-auto bg-white flex justify-center items-center"
+      >
         <!-- contentbox -->
         <div class="grid grid-cols-3 w-[60%] mx-auto gap-5">
           <!-- card -->
@@ -323,8 +322,8 @@ l<!DOCTYPE html>
               />
             </svg>
             <!-- box content -->
-            <div class="z-[20] absolute top-10 right-10 left-20 text-left p-5">
-              <h2 class="text-deepBlue text-3xl font-extrabold p-2">
+            <div class="z-[20] absolute top-5 right-10 left-5 text-left p-5">
+              <h2 class="text-deepBlue text-3xl font-extrabold">
                 Payment Links
               </h2>
               <p class="text-slate-400 py-2">
@@ -364,8 +363,8 @@ l<!DOCTYPE html>
             </svg>
 
             <!-- box content -->
-            <div class="z-[20] absolute top-10 right-10 left-20 text-left p-5">
-              <h2 class="text-deepBlue text-3xl font-extrabold p-2">
+            <div class="z-[20] absolute top-5 right-10 left-5 text-left p-5">
+              <h2 class="text-deepBlue text-3xl font-extrabold">
                 Payment pages
               </h2>
               <p class="text-slate-400 py-2">
@@ -405,8 +404,8 @@ l<!DOCTYPE html>
             </svg>
 
             <!-- box content -->
-            <div class="z-[20] absolute top-10 right-10 left-20 text-left p-5">
-              <h2 class="text-deepBlue text-3xl font-extrabold p-2">
+            <div class="z-[20] absolute top-5 right-10 left-5 text-left p-5">
+              <h2 class="text-deepBlue text-3xl font-extrabold">
                 Payment Buttons
               </h2>
               <p class="text-slate-400 py-2">
@@ -445,8 +444,8 @@ l<!DOCTYPE html>
             </svg>
 
             <!-- box content -->
-            <div class="z-[20] absolute top-10 right-10 left-20 text-left p-5">
-              <h2 class="text-deepBlue text-3xl font-extrabold p-2">
+            <div class="z-[20] absolute top-5 right-10 left-5 text-left p-5">
+              <h2 class="text-deepBlue text-3xl font-extrabold">
                 Subscriptions
               </h2>
               <p class="text-slate-400 py-2">
@@ -485,8 +484,8 @@ l<!DOCTYPE html>
             </svg>
 
             <!-- box content -->
-            <div class="z-[20] absolute top-10 right-10 left-20 text-left p-5">
-              <h2 class="text-deepBlue text-3xl font-extrabold p-2">Route</h2>
+            <div class="z-[20] absolute top-5 right-10 left-5 text-left p-5">
+              <h2 class="text-deepBlue text-3xl font-extrabold">Route</h2>
               <p class="text-slate-400">
                 Split incoming payments auto-matically to vendor's accounts
                 manage marketplace money flow py-2..
@@ -523,8 +522,8 @@ l<!DOCTYPE html>
             </svg>
 
             <!-- box content -->
-            <div class="z-[20] absolute top-10 right-10 left-20 text-left p-5">
-              <h2 class="text-deepBlue text-3xl font-extrabold p-2">
+            <div class="z-[20] absolute top-5 right-10 left-5 text-left p-5">
+              <h2 class="text-deepBlue text-3xl font-extrabold">
                 Smart Collect
               </h2>
               <p class="text-slate-400 py-2">
@@ -537,79 +536,239 @@ l<!DOCTYPE html>
               </a>
             </div>
           </div>
-          <!-- <div class="card">
-            <svg
-  width="400"
-  height="300"
-  viewBox="0 0 400 300"
-  xmlns="http://www.w3.org/2000/svg"
-  version="1.1"
-  class="rounded-b-md">
-  
-  <polygon 
-    points="0,0 320,0 400,60 400,300 0,300"
-    fill="#ffffff" 
-    stroke="#D3D3D3" 
-    stroke-width="1"
-    class="shadow-xl" />
-  
-</svg>
-            <div class="card-content">
-              <h2>Chamfered Card</h2>
-              <p>This card has a chamfered top-right corner using SVG.</p>
-            </div>
-          </div> -->
-          `
         </div>
       </section>
       <!-- explore Razorpay Business Banking -->
-      <section>
-        <div>
-          <div>
-            <h2>Explore Razorpay Business Banking</h2>
-            <div class="bg-green-300 w-[2rem] h-[5px]"></div>
-          </div>
-          <!-- banner card -->
-          <div>
-            <h2></h2>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <div><button></button><a href=""></a></div>
-          </div>
-          <!-- cards -->
-          <div>
-            <a href=""></a>
-            <div>
-              <h2></h2>
-              <p></p>
-              <a href=""></a>
+      <section
+        class="h-full w-full flex-col justify-center bg-deepBlue text-white relative rounded-md"
+      >
+        <!-- the section values -->
+        <section class="my-[2rem] w-[full]">
+          <div class="flex-col justify-center h-[70vh] w-full">
+            <!-- heading -->
+            <div
+              class="w-full bg-deepBlue font-bold text-white text-2xl flex items-center justify-center font-inter"
+            >
+              <h1 class="mt-[3rem]">Explore Razorpay Business Banking</h1>
+            </div>
+            <div
+              class="w-[2rem] h-1.5 bg-green-400 mx-auto my-auto mb-[3rem]"
+            ></div>
+            <div
+              class="flex justify-around border-3 rounded-2xl w-[60%] h-[100%] my-[2rem] mx-auto shadow-2xl border-gray-800"
+            >
+              <!-- left box -->
+              <div
+                class="flex-col w-[50%] p-[2rem] my-auto text-left justify-center items-center"
+              >
+                <!-- heading -->
+                <h2
+                  class="text-white font-bold text-left text-[25px] my-3 py-2"
+                >
+                  Manage your company's finances with Razorpay
+                  <span class="text-green-500">Business Banking</span>
+                </h2>
+                <!-- unorder list -->
+                <ul class="text-[20px] text-left py-2 px-1.5">
+                  <li class="text-white p-1 flex items-center mx-2">
+                    <i data-feather="check" class="text-green-300"></i>
+                    <p>Open a fully digital current account</p>
+                  </li>
+                  <li class="text-white p-1 flex items-center mx-2">
+                    <i data-feather="check" class="text-green-300"></i>
+                    <p>Automate payables & compliment payments</p>
+                  </li>
+                  <li class="text-white p-1 flex items-center mx-2">
+                    <i data-feather="check" class="text-green-300"></i>
+                    <p>Simplfiy and track spends with Corporate cards</p>
+                  </li>
+                  <li class="text-white p-1 flex items-center mx-2">
+                    <i data-feather="check" class="text-green-300"></i>
+                    <p>View financial insights at a glance</p>
+                  </li>
+                </ul>
+                <div class="flex justify-around m-5">
+                  <button
+                    onclick=""
+                    class="bg-blue-600 w-[10rem] h-[3rem] rounded-sm relative flex justify-between  items-center"
+                  >
+                   <p class="w-[50%]"> Sign Up</p>
+                    <div
+                      class="w-12 h-[60px] bg-green-500 absolute right-6 skew-x-[20deg] flex justify-center items-center"
+                    >
+                      <i
+                        data-feather="arrow-right"
+                        class="text-white-400 skew-x-[-20deg]"
+                      ></i>
+                    </div>
+                  </button>
+                  <a
+                    href=""
+                    class="mx-2 text-blue-600 content-evenly font-bold flex justify-evenly items-center w-[8rem] cursor-pointer"
+                    >Know more
+                    <i data-feather="arrow-right" class="text-white"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- right box -->
+              <div class="flex content-center w-[50%] p-[2rem] h-[100%]">
+                <img
+                  width="100%"
+                  height="100%"
+                  loading="lazy"
+                  src="./images/2nd_banner_img.jpg"
+                  alt="banner2"
+                />
+              </div>
             </div>
           </div>
-          <div>
-            <a href=""></a>
-            <div>
-              <h2></h2>
-              <p></p>
-              <a href=""></a>
+        </section>
+      </section>
+      <!-- cards -->
+      <section class="w-full mx-auto bg-deepBlue h-full">
+        <!-- contentbox -->
+        <div class="grid grid-cols-3 w-[60%] mx-auto gap-5">
+          <!-- card -->
+          <div class="relative flex justify-center cursor-pointer">
+            <!-- img -->
+            <i
+              data-feather="refresh-ccw"
+              class="text-green-300 absolute right-10 top-3"
+            ></i>
+            <!-- box shape -->
+            <svg
+              width="350"
+              height="270"
+              viewBox="0 0 350 270"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              class="rounded-md"
+            >
+              <!-- Polygon with top-right chamfer -->
+              <polygon
+                points="0,0 280,0 350,60 350,270 0,270"
+                fill="#050a30"
+                stroke="#D3D3D3"
+                stroke-width="1"
+                class="shadow-xl"
+              />
+            </svg>
+
+            <!-- box content -->
+            <div class="z-[20] absolute top-5 right-10 left-5 text-left p-5">
+              <h2 class="text-white text-3xl font-extrabold p-2">
+                Current Account
+              </h2>
+              <p class="text-slate-400 py-2">
+                Current accounts for fast-growning business, supported by the
+                best-in-class technology
+              </p>
+              <a href="" class="flex text-blue-500"
+                >Know more
+                <i data-feather="chevron-right" class="text-blue-500"></i>
+              </a>
             </div>
           </div>
-          <div>
-            <a href=""></a>
-            <div>
-              <h2></h2>
-              <p></p>
-              <a href=""></a>
+          <div class="relative flex justify-center cursor-pointer">
+            <!-- img -->
+            <i
+              data-feather="refresh-ccw"
+              class="text-green-300 absolute right-10 top-3"
+            ></i>
+            <!-- box shape -->
+            <svg
+              width="350"
+              height="270"
+              viewBox="0 0 350 270"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              class="rounded-md"
+            >
+              <!-- Polygon with top-right chamfer -->
+              <polygon
+                points="0,0 280,0 350,60 350,270 0,270"
+                fill="#050a30"
+                stroke="#D3D3D3"
+                stroke-width="1"
+                class="shadow-xl"
+              />
+            </svg>
+
+            <!-- box content -->
+            <div class="z-[20] absolute top-5 right-10 left-5 text-left p-5">
+              <h2 class="text-white text-3xl font-extrabold p-2">
+                Capital & Credit
+              </h2>
+              <p class="text-slate-400">
+                Instant additional cash and corporate cards designed for growing
+                business
+              </p>
+              <a href="" class="flex text-blue-500 py-7"
+                >Know more
+                <i data-feather="chevron-right" class="text-blue-500"></i>
+              </a>
             </div>
           </div>
+          <div class="relative flex justify-center cursor-pointer">
+            <i
+              data-feather="refresh-ccw"
+              class="text-green-300 absolute right-10 top-3"
+            ></i>
+            <!-- img -->
+            <!-- box shape -->
+            <svg
+              width="350"
+              height="270"
+              viewBox="0 0 350 270"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              class="rounded-md"
+            >
+              <!-- Polygon with top-right chamfer -->
+              <polygon
+                points="0,0 280,0 350,60 350,270 0,270"
+                fill="#050a30"
+                stroke="#D3D3D3"
+                stroke-width="1"
+                class="shadow-xl"
+              />
+            </svg>
+
+            <!-- box content -->
+            <div class="z-[20] absolute top-5 right-10 left-5 text-left p-5">
+              <h2 class="text-white text-3xl font-extrabold p-2">Payouts</h2>
+              <p class="text-slate-400 py-2">
+                Make simple,reliable & secure payouts to bank accounts , UPI IDs
+                or wallets
+              </p>
+              <a href="" class="flex text-blue-500 py-3"
+                >Know more
+                <i data-feather="chevron-right" class="text-blue-500"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex justify-evenly text-white border-2 text-[1rem] border-gray-400 w-[60%] mx-auto h-[6rem] items-center rounded-md my-[10rem]"
+        >
+          <p>
+            Check out the live demo to learn how RazorpayX works.No sign-up
+            required!
+          </p>
+          <button
+            class="border-2 bg-blue-500 w-[15rem] h-[3rem] rounded-sm flex justify-evenly items-center"
+          >
+            Check out the demo
+            <i
+              data-feather="arrow-right"
+              class="text-green-300 right-10 top-3 p-1"
+            ></i>
+          </button>
         </div>
       </section>
     </main>
     <footer
-      class="w-full h-[6rem] relative my-0 flex justify-center items-center bg-deepBlue"
+      class="w-full h-[6rem] flex justify-center realtive items-center bg-deepBlue"
     >
       <p class="h-[10px] text-white">hi there iam footer</p>
     </footer>
