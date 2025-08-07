@@ -6,6 +6,20 @@ l<!DOCTYPE html>
     <link rel="stylesheet" href="./main.css" />
 
     <title>Razor pay clone</title>
+    <style>
+      .move_img {
+        /* position: relative; */
+        animation: scroll_up 15s linear infinite;
+      }
+      @keyframes scroll_up {
+        0% {
+          transform: translateY(100%);
+        }
+        100% {
+          transform: translateY(-50%);
+        }
+      }
+    </style>
   </head>
 
   <body
@@ -1039,7 +1053,9 @@ l<!DOCTYPE html>
           class="mx-auto flex justify-center items-center w-[60%] gap-[10rem]"
         >
           <!-- left div -->
-          <div class="mx-auto flex-col justify-items-start text-justify w-[60%]">
+          <div
+            class="mx-auto flex-col justify-items-start text-justify w-[60%]"
+          >
             <h2 class="text-deepBlue font-bold text-2xl my-[1rem]">
               Join the 50,00,000+businesses using Razorpay
             </h2>
@@ -1056,12 +1072,55 @@ l<!DOCTYPE html>
             </p>
           </div>
           <!-- right div -->
-          <div class="w-[40%] h-[100%]">
+          <div class="w-[40%] h-[100%] overflow-y-hidden relative">
+            <div
+              class="absolute w-full h-[100px] top-0 z-20"
+              style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
+            ></div>
             <img
               src="./images/sasha-matic-99cZwcq7QyA-unsplash.jpg"
               alt="bird images"
+              class="move_img object-cover h-auto"
             />
+            <div
+              class="absolute w-full h-[100px] bottom-0 z-20"
+              style="background: linear-gradient(0deg, #f4f8ff, #fff0)"
+            ></div>
           </div>
+        </div>
+      </section>
+
+      <!-- testimonial section -->
+      <section class="relative">
+        <div>
+          <h2>An Experience <br />People Love to</h2>
+        </div>
+        <img src="./images/dotted.jpg" alt="" class="absolute" />
+        <div>green button</div>
+        <div>
+          <div>
+            <div><img src="" alt="" /></div>
+          </div>
+          <div><img src="" alt="" /></div>
+          <div>
+            <img src="" alt="" />
+            <p></p>
+            <a href=""></a>
+            <p></p>
+            <p></p>
+            <img src="" alt="" />
+          </div>
+          <div>
+            <div><img src="" alt="" /></div>
+          </div>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </section>
     </main>
