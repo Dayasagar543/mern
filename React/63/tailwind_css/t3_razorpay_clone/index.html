@@ -285,10 +285,10 @@ l
                   <p>In-depth Reporting and Insights</p>
                 </li>
               </ul>
-              <div class="flex justify-around m-5">
+              <div class="flex flex-col lg:flex-row justify-around m-5">
                 <button
                   onclick=""
-                  class="bg-blue-600 w-[10rem] h-[3rem] rounded-sm flex justify-evenly items-center"
+                  class="bg-blue-600 w-[10rem] h-[3rem] rounded-sm self-stretch flex  justify-evenly items-center"
                 >
                   Sign Up Now
                   <i data-feather="arrow-right" class="text-white"></i></button
@@ -308,6 +308,7 @@ l
                 loading="lazy"
                 src="./images/2nd_banner_img.jpg"
                 alt="banner2"
+                class="hidden lg:block"
               />
             </div>
           </div>
@@ -570,7 +571,7 @@ l
         class=" w-full flex-col justify-center bg-deepBlue text-white relative rounded-md"
       >
         <!-- the section values -->
-        <section class="my-[2rem] w-full">
+        <div class="my-[2rem] w-full">
           <div class="flex-col justify-center lg:h-[70vh] w-full">
             <!-- heading -->
             <div
@@ -586,7 +587,7 @@ l
             >
               <!-- left box -->
               <div
-                class="flex-col w-[50%] p-[2rem] my-auto text-left justify-center items-center"
+                class="flex-col lg:w-[50%] p-[2rem] my-auto text-left justify-center items-center"
               >
                 <!-- heading -->
                 <h2
@@ -614,12 +615,12 @@ l
                     <p>View financial insights at a glance</p>
                   </li>
                 </ul>
-                <div class="flex flex-col lg:flex-row justify-around m-5">
+                <div class="flex flex-col gap-3 lg:flex-row lg:justify-around m-5">
                   <button
                     onclick=""
-                    class="bg-blue-600  w-[15rem] lg:w-[10rem] h-[3rem] rounded-sm relative flex flex-row justify-center lg:justify-between items-center"
+                    class="bg-blue-600 self-stretch w-full   lg:w-[10rem] h-[3rem]  rounded-sm relative flex flex-row justify-center  items-center"
                   >
-                    <p class=" w-full lg:w-[50%]">Sign Up</p>
+                    Sign Up
                     <div
                       class="w-12 h-[60px] bg-green-500 absolute right-6 skew-x-[20deg] flex justify-center items-center"
                     >
@@ -631,7 +632,7 @@ l
                   </button>
                   <a
                     href=""
-                    class="mx-2 text-blue-600  content-evenly font-bold flex justify-evenly items-center lg:w-[8rem] cursor-pointer"
+                    class="mx-2 text-blue-600  lg:content-evenly font-bold flex justify-evenly items-center lg:w-[8rem] cursor-pointer"
                     >Know more
                     <i data-feather="arrow-right" class="text-white"></i>
                   </a>
@@ -650,7 +651,7 @@ l
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </section>
 
       <!-- cards2 -->
@@ -778,16 +779,16 @@ l
           </div>
         </div>
         <div
-          class="flex justify-evenly text-white border-2 text-[1rem] border-gray-400 w-[60%] mx-auto h-[6rem] items-center rounded-md my-[10rem]"
+          class="flex flex-col  lg:flex-row justify-evenly text-white border-2 text-[1rem] border-gray-400 lg:w-[60%] mx-auto h-[8rem] lg:h-[6rem] items-center rounded-md my-[10rem]"
         >
           <p>
             Check out the live demo to learn how RazorpayX works.No sign-up
             required!
           </p>
           <button
-            class="bg-blue-500 w-[15rem] h-[3rem] rounded-sm flex justify-evenly items-center"
+            class="bg-blue-500  w-[15rem] h-[3rem] rounded-sm flex flex-row justify-evenly items-center"
           >
-            <p>Check out the demo</p>
+            Check out the demo
             <div
               class="h-[3.5rem] w-[2rem] bg-green-400 flex items-center justify-center skew-x-[20deg]"
             >
@@ -1095,7 +1096,7 @@ l
             <img
               src="./images/sasha-matic-99cZwcq7QyA-unsplash.jpg"
               alt="bird images"
-              class="move_img object-cover h-auto"
+              class="move_img object-cover h-auto bg-no-repeat bg-contain overflow-x-hidden mx-auto"
             />
             <div
               class="absolute w-full h-[100px] bottom-0 z-20"
@@ -1106,7 +1107,7 @@ l
       </section>
 
       <!-- testimonial section -->
-      <section class="  lg:h-[70%] bg-white flex items-center justify-center">
+      <section class=" h-full lg:h-[70%] bg-white flex items-center justify-center">
         <div
           class="w-11/12 max-w-[1300px] lg:h-full mx-auto relative py-[20] flex flex-col justify-evenly items-center"
         >
@@ -1135,12 +1136,12 @@ l
             <div class="flex flex-col lg:flex-row lg:items-center justify-evenly w-10/12">
               <div>
                 <img
-                  class="relative z-[10] rounded-md"
+                  class="relative z-[10] rounded-md mx-auto"
                   src="./images/professinal1.jpg"
                   alt=""
                 />
               </div>
-              <div class="text-black flex flex-col justify-evenly items-start">
+              <div class="text-black flex flex-col mx-auto justify-evenly items-start">
                 <div><img src="" alt="" /></div>
                 <h2 class="text-2xl text-left font-thin">
                   Readymade Closed Wallet <br />
