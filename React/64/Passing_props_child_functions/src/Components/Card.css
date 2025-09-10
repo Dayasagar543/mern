@@ -1,4 +1,7 @@
 .outer_bg {
   background-color: #77b6ea;
-  
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  align-content: center;
 }
