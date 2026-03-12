@@ -10,9 +10,17 @@ export const pasteSlice = createSlice({
   name: "paste",
   initialState,
   reducers: {
-    add_paste: (state, action) => {},
-    update_paste: (state, action) => {},
-    delete_paste: (state, action) => {},
+    add_paste: (state, action) => {
+      const paste=action.payload;
+      state.pastes.push(paste)
+    },
+    update_paste: (state, action) => {
+      const update_paste=action.payload;
+      state.pastes.
+    },
+    delete_paste: (state, action) => {
+      
+    },
     reset_pastes: (state, action) => {},
   },
 });

@@ -1,18 +1,36 @@
 import { useState } from "react";
 import "./App.css";
-import { createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./pages/Home";
+import Paste_view from "./pages/Paste_view";
+import Paste_detail from "./pages/Paste_detail";
+import About from "./pages/About";
+import ContactUs from "./pages/ContactUs";
+import Service from "./pages/Service";
+import Navbar from "./components/Navbar";
 
+// routes
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: (
+      <div>
+        <Navbar />
+        <Home />
+      </div>
+    ),
   },
   {
     path: "/pastes",
-    element: <Root />,
+    element: (
+      <div>
+        <Navbar />
+        <Paste_view />
+      </div>
+    ),
   },
   {
-    path: "/pastes/:id`",
+    path: "/pastes/:id",
     element: <Root />,
   },
 ]);
@@ -22,8 +40,12 @@ function App() {
 
   return (
     <>
-      <div className="h-lvh w-1vw flex flex-col justify-center items-center">
-         Chinuch Tech
+      <div className="flex flex-col justify-evenly">
+        <RouterProvider router={router}>
+          <div className="h-lvh w-1vw flex flex-col justify-center items-center">
+            Chinuch Tech
+          </div>
+        </RouterProvider>
       </div>
     </>
   );
