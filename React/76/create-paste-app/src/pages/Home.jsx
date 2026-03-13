@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { add_paste, update_paste, delete_paste } from  "../redux/paste_slice"
 
 const Home = () => {
   const [title, setTitle] = useState("");
@@ -13,8 +14,8 @@ const Home = () => {
     const paste = {
       title: title,
       description: text,
-      id: parseInt(Math.random() * 10),
-      created_at: new Date.toISOString(),
+      id: pasteId || Date.now().toString(36),
+      created_at: new Date().toISOString(),
     };
 
     if (pasteId) {
