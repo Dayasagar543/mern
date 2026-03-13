@@ -30,8 +30,40 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/pastes/:id",
-    element: <Root />,
+    path: "/pastes",
+    element: (
+      <div>
+        <Navbar />
+        <Paste_detail />
+      </div>
+    ),
+  },
+  {
+    path: "/about",
+    element: (
+      <div>
+        <Navbar />
+        <About />
+      </div>
+    ),
+  },
+  {
+    path: "/contactUs",
+    element: (
+      <div>
+        <Navbar />
+        <ContactUs />
+      </div>
+    ),
+  },
+  {
+    path: "/service",
+    element: (
+      <div>
+        <Navbar />
+        <Service />
+      </div>
+    ),
   },
 ]);
 
