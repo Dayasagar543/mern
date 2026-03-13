@@ -16,7 +16,7 @@ export const pasteSlice = createSlice({
     },
     update_paste: (state, action) => {
       const update_paste=action.payload;
-      state.pastes.
+      // state.pastes.push()
     },
     delete_paste: (state, action) => {
       
