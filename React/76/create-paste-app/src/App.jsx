@@ -30,7 +30,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/pastes/:id",
+    path: "/pastes",
     element: (
       <div>
         <Navbar />
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/about",
+    path: "/pastes",
     element: (
       <div>
         <Navbar />
@@ -48,7 +48,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/contactUs",
+    path: "/pastes",
     element: (
       <div>
         <Navbar />
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/service",
+    path: "/pastes",
     element: (
       <div>
         <Navbar />
