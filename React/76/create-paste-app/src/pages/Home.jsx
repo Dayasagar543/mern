@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { add_paste, update_paste, delete_paste } from  "../redux/paste_slice"
+import { add_paste, update_paste } from "../redux/paste_slice";
 
 const Home = () => {
   const [title, setTitle] = useState("");
@@ -26,9 +26,9 @@ const Home = () => {
       dispatch(add_paste(paste));
     }
 
-    setTitle('')
-    setText('')
-    setSearchparams({})
+    setTitle("");
+    setText("");
+    setSearchparams({});
   };
 
   return (
@@ -37,6 +37,8 @@ const Home = () => {
       <div className="w-[80vw] flex flex-col justify-evenly items-center bg-pink-400 h-[60vh] rounded ">
         <input
           className="border-2 w-[60%] rounded "
+          id="title"
+          name="title"
           type="text"
           onChange={(e) => {
             setTitle(e.target.value);
@@ -44,11 +46,11 @@ const Home = () => {
           value={title}
         />
         <textarea
-          name=""
-          id=""
           cols="30"
           rows="10"
           className="border-2  w-[60%] rounded-sm  "
+          id="description"
+          name="description"
           onChange={(e) => {
             setText(e.target.value);
           }}

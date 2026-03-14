@@ -1,46 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
+
+import PasteCard from "../components/PasteCard";
 const Paste_view = () => {
   const pastes = useSelector((state) => state.paste.pastes);
-  const edit = () => {};
-  const copy = () => {};
-  const delete_paste = () => {};
-  const share = () => {};
+  const [search, setSearch] = useState("");
 
   return (
     <div className=" flex flex-col items-center ">
-      Paste_view
-      <label htmlFor="search">search</label>
-      <input
-        type="text"
-        id="serach"
-        className="border-2 w-[60vw] text-center"
-        placeholder="serach the paste "
-      />
-      <div className=" w-[80vw] h-screen grid grid-cols-3 gap-2 text-center">
-        {pastes.map((paste) => (
-          <div
-            id={paste.id}
-            className=" w-28 h-20 flex flex-col  items-center text-center "
+      <div className=" flex flex-col justify-evenly  text-center h-24">
+        <h2 className="text-3xl">your pastes</h2>
+        <div className="w-[80vw] flex justify-evenly">
+          <label htmlFor="search" className="text-2xl">
+            search
+          </label>
+          <input
+            type="text"
+            id="search"
+            className="border-2 w-[60vw] text-center rounded-[5px]"
+            placeholder="search the paste "
+            value={search}
+            onChange={(e) => {
+              setSearch(e.target.value);
+            }}
+          />
+
+          <button
+            className="border-2 p-2 rounded-[5px]"
+            onClick={() => {
+              dispatch(reset_pastes());
+            }}
           >
-            <div>{paste.title}</div>
-            <p>{paste.description}</p>
-            <div className="flex flex-row w-full ">
-              <button className="border-2" onClick={edit}>
-                edit
-              </button>
-              <button className="border-2" onClick={copy}>
-                copy
-              </button>
-              <button className="border-2" onClick={delete_paste}>
-                delete
-              </button>
-              <button className="border-2" onClick={share}>
-                share
-              </button>
-            </div>
-          </div>
-        ))}
+            reset
+          </button>
+        </div>
+      </div>
+      <div className=" w-[80vw] h-screen grid grid-cols-3 grid-rows-3 gap-2  m-3">
+        {search
+          ? pastes.filter((paste) =>
+              paste.title.toLowerCase().includes(search.toLowerCase())
+            )
+          : pastes.map((paste) => <PasteCard card={paste} />)}
       </div>
     </div>
   );
