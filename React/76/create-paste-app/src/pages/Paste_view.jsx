@@ -1,10 +1,18 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { reset_pastes } from "../redux/paste_slice";
 
 import PasteCard from "../components/PasteCard";
+import { Outlet } from "react-router-dom";
 const Paste_view = () => {
   const pastes = useSelector((state) => state.paste.pastes);
   const [search, setSearch] = useState("");
+  const dispatch = useDispatch();
+
+  const filtered_Data = pastes.filter((paste) => {
+    return paste.title.toLowerCase().includes(search.toLowerCase());
+  });
+  // console.log(filtered_Data);
 
   return (
     <div className=" flex flex-col items-center ">
@@ -35,13 +43,19 @@ const Paste_view = () => {
           </button>
         </div>
       </div>
+      {/* cards of the data or pastes */}
       <div className=" w-[80vw] h-screen grid grid-cols-3 grid-rows-3 gap-2  m-3">
-        {search
-          ? pastes.filter((paste) =>
-              paste.title.toLowerCase().includes(search.toLowerCase())
-            )
-          : pastes.map((paste) => <PasteCard card={paste} />)}
+        {filtered_Data.length > 0 &&
+          filtered_Data.map((paste) => (
+            <PasteCard
+              key={paste.id}
+              title={paste.title}
+              description={paste.description}
+              id={paste.id}
+            />
+          ))}
       </div>
+      <Outlet />
     </div>
   );
 };

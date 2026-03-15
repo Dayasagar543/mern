@@ -44,6 +44,7 @@ export const pasteSlice = createSlice({
     reset_pastes: (state) => {
       state.pastes = [];
       localStorage.removeItem("pastes");
+      toast.success("the reset is success full ")
     },
   },
 });

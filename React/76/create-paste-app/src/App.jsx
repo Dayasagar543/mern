@@ -28,15 +28,17 @@ const router = createBrowserRouter([
         <Paste_view />
       </div>
     ),
-  },
-  {
-    path: "/pastes",
-    element: (
-      <div>
-        <Navbar />
-        <Paste_detail />
-      </div>
-    ),
+    children: [
+      {
+        path: "/pastes/:id",
+        element: (
+          <div>
+            <Navbar />
+            <Paste_detail />
+          </div>
+        ),
+      },
+    ],
   },
   {
     path: "/about",
@@ -73,11 +75,7 @@ function App() {
   return (
     <>
       <div className="flex flex-col justify-evenly">
-        <RouterProvider router={router}>
-          <div className="h-lvh w-1vw flex flex-col justify-center items-center">
-            Chinuch Tech
-          </div>
-        </RouterProvider>
+        <RouterProvider router={router} />
       </div>
     </>
   );
