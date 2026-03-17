@@ -12,7 +12,7 @@ export const pasteSlice = createSlice({
   reducers: {
     add_paste: (state, action) => {
       const paste = action.payload;
-      const exist = state.pastes.findIndex((item) => item.id == paste.id);
+      const exist = state.pastes.findIndex((item) => item.id === paste.id);
       if (exist === -1) {
         state.pastes.push(paste);
         localStorage.setItem("pastes", JSON.stringify(state.pastes));
@@ -21,9 +21,12 @@ export const pasteSlice = createSlice({
     },
     update_paste: (state, action) => {
       const paste = action.payload;
+      console.log(paste)
       const index = state.pastes.findIndex((item) => {
-        item.id == paste.id;
+
+        return item.id == paste.id;
       });
+      console.log(index)
       if (index >= 0) {
         state.pastes[index] = paste;
       }

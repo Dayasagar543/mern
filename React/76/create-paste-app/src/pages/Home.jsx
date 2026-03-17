@@ -7,7 +7,7 @@ const Home = () => {
   const All_pastes = useSelector((state) => {
     return state.paste.pastes;
   });
-  console.log(All_pastes);
+  // console.log(All_pastes);
   const [title, setTitle] = useState("");
   const [text, setText] = useState("");
   const [searchParams, setSearchparams] = useSearchParams();
@@ -19,13 +19,13 @@ const Home = () => {
       const paste = All_pastes.find((item) => {
         return item.id === pasteId;
       });
-      console.log(paste)
+      // console.log(paste)
       setTitle(paste.title);
       setText(paste.description);
     }
   }, [pasteId]);
 
-  const create_paste = (e) => {
+  const paste_function = (e) => {
     const paste = {
       title: title,
       description: text,
@@ -74,7 +74,7 @@ const Home = () => {
 
         <button
           className="border-2 h-8 px-2  w-auto  rounded-sm text-center content-center "
-          onClick={create_paste}
+          onClick={paste_function}
         >
           {pasteId ? "update paste" : "create Paste"}
         </button>
