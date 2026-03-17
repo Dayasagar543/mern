@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { reset_pastes } from "../redux/paste_slice";
-
 import PasteCard from "../components/PasteCard";
 import { Outlet } from "react-router-dom";
 const Paste_view = () => {

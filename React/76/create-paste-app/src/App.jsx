@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./App.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
@@ -28,17 +28,6 @@ const router = createBrowserRouter([
         <Paste_view />
       </div>
     ),
-    children: [
-      {
-        path: "/pastes/:id",
-        element: (
-          <div>
-            <Navbar />
-            <Paste_detail />
-          </div>
-        ),
-      },
-    ],
   },
   {
     path: "/about",
@@ -67,10 +56,19 @@ const router = createBrowserRouter([
       </div>
     ),
   },
+  {
+    path: "/pastes/:id",
+    element: (
+      <div>
+        <Navbar />
+        <Paste_detail />
+      </div>
+    ),
+  },
 ]);
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   return (
     <>

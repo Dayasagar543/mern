@@ -6,7 +6,9 @@ import toast from "react-hot-toast";
 const PasteCard = ({ id, title, description }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const edit = () => {};
+  const edit = (id) => {
+    navigate(`/?pasteid=${id}`);
+  };
   const copy = async (title, description) => {
     try {
       const text = `Title: ${title}\n\nDescription:\n${description}`;
@@ -29,9 +31,7 @@ const PasteCard = ({ id, title, description }) => {
     dispatch(delete_paste(pasteid));
   };
   const share = () => {};
-  const view = (id) => {
-    navigate(`/pastes/${id}`);
-  };
+
   return (
     <div
       key={id}
@@ -40,7 +40,7 @@ const PasteCard = ({ id, title, description }) => {
       <div>{title}</div>
       <p>{description}</p>
       <div className="flex flex-row w-full justify-around ">
-        <button className="border-2" onClick={edit}>
+        <button className="border-2" onClick={() => edit(id)}>
           edit
         </button>
         <button className="border-2" onClick={() => copy(title, description)}>
@@ -52,7 +52,7 @@ const PasteCard = ({ id, title, description }) => {
         <button className="border-2" onClick={() => share}>
           share
         </button>
-        <button className="border-2" onClick={() => view(id)}>
+        <button className="border-2" onClick={() => navigate(`/pastes/${id}`)}>
           view
         </button>
       </div>
