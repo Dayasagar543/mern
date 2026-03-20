@@ -6,6 +6,19 @@ const api = require("./routes/item");
 app.use("/api", api);
 
 // app.get("/", (req, res) => {
+//   // res.send("<p>hello world!</p>");
+//   res.sendFile("./index.html",{root:__dirname})
+// });
+
+// app.post("/items", (req, res) => {
+//   res.send("<p>hello world!</p>");
+// });
+
+// app.put("/items/:id", (req, res) => {
+//   res.send("hello world!");
+// });
+
+// app.delete("/items/:id", (req, res) => {
 //   res.send("hello world!");
 // });
 
