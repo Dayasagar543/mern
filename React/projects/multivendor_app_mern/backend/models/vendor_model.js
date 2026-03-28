@@ -16,7 +16,7 @@ const vendor_schema = new mongoose.Schema({
   email: {
     type: String,
     required: true,
-    unique: trusted,
+    unique: true,
   },
   password: {
     type: String,

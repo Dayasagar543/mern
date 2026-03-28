@@ -1,6 +1,8 @@
 const express = require("express");
 const env = require("dotenv");
 const mongoose = require("mongoose");
+const vendor_routes = require("./routes/vendor_routes");
+const bodyparser = require("body-parser");
 
 env.config();
 const app = express();
@@ -15,6 +17,10 @@ mongoose
   .catch((error) => {
     console.log(error);
   });
+
+app.use(bodyparser.json());
+
+app.use("/vendor", vendor_routes);
 
 app.listen(port, () => {
   console.log("the app is runing at " + `${port}`);
