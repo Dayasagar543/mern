@@ -1,9 +1,8 @@
 const express = require("express");
 const env = require("dotenv");
 const mongoose = require("mongoose");
-const vendor_routes = require("./routes/vendor_routes");
+const vendor_routes = require("./routes/vendor_route");
 const bodyparser = require("body-parser");
-
 env.config();
 const app = express();
 
@@ -17,15 +16,12 @@ mongoose
   .catch((error) => {
     console.log(error);
   });
-
-app.use(bodyparser.json());
-
-app.use("/vendor", vendor_routes);
-
-app.listen(port, () => {
-  console.log("the app is runing at " + `${port}`);
-});
-
+app.use("/vendor", bodyparser);
+app.use(vendor_routes);
+//app
 app.get("/", (req, res) => {
   res.send("<h1>welcome to tov foods </h1>");
+});
+app.listen(port, () => {
+  console.log("the app is runing at " + `${port}`);
 });
