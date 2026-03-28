@@ -31,7 +31,7 @@ const vendor_registration = async (req, res) => {
 };
 
 const vendor_update = async (req, res) => {
-  const{id}=req.
+  const{id}=req.body
 };
 const vendor_delete = async (req, res) => {};
 
