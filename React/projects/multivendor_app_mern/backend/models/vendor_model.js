@@ -22,6 +22,7 @@ const vendor_schema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  firm: [{ type: mongoose.Schema.Types.ObjectId, ref: "Firm" }],
 });
 
 const Vendor = mongoose.model("Vendor", vendor_schema);

@@ -1,7 +1,10 @@
-const vendor = require("../models/vendor_model");
+const vendor = require("../models/Vendor_model");
 const jwt = require("jsonwebtoken");
 const bcryptjs = require("bcryptjs");
-const Vendor = require("../models/vendor_model");
+const dotenv = require("dotenv");
+
+dotenv.config();
+const secret_Key = process.env.whatisyourname;
 
 const vendor_registration = async (req, res) => {
   const { name, age, gender, email, password } = req.body;
@@ -46,11 +49,15 @@ const vendor_login = async (req, res) => {
         .status(401)
         .json({ error: "the password or the email are incorrect" });
     }
-    res.status(201).json({ success: "login sucessful" });
+
+    const token = jwt.sign({ vendor_id: vendor._id }, secret_Key, {
+      expiresIn: "1h",
+    });
+    res.status(201).json({ success: "login sucessful",token:token });
     console.log(email);
   } catch (error) {
     console.error(error);
-    res.status(501).json({ error: "internal server error" });
+    res.status(500).json({ error: "internal server error" });
   }
 };
 
@@ -59,4 +66,9 @@ const vendor_update = async (req, res) => {
 };
 const vendor_delete = async (req, res) => {};
 
-module.exports = { vendor_registration, vendor_login, vendor_update };
+module.exports = {
+  vendor_registration,
+  vendor_login,
+  vendor_update,
+  vendor_delete,
+};
