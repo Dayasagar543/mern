@@ -6,9 +6,4 @@ import { Component } from '@angular/core';
   styleUrl: './header.css',
   templateUrl: './header.html',
 })
-export class Header {
-
-  add(a: number, b: number) {
-    return a+b
-  }
-}
+export class Header {}

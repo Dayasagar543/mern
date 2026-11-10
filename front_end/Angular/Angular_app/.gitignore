@@ -5,8 +5,7 @@
 /tmp
 /out-tsc
 /bazel-out
-/front_end/Angular/angular-app/src/app/components/main/main.spec.ts'
-/front_end/Angular/angular-app/package-lock.json'
+
 # Node
 /node_modules
 npm-debug.log

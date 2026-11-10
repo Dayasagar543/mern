@@ -1,0 +1,37 @@
+<app-header></app-header>
+<hr>
+<h1>{{title()}}</h1>
+<h2>{{name}}</h2>
+<p>{{10+20+30}}</p>
+<button (click)="callme()">click me </button>
+
+<button (click)="change_value('decrement')">-</button>
+<h3>{{value}}</h3>
+<button (click)="change_value('increment')">+</button>
+
+<input type="text" (input)="handle_input($event.type)">
+<br>
+<br>
+<input type="text" (change)="handle_input($event.type)">
+<br>
+<br>
+<button (click)="handle_input($event.type)">click me </button>
+<br>
+<br>
+<select name="cars" id="1" (change)="handle_input($event.type)">
+    <option value="benz">benz</option>
+    <option value="bmw">bmw</option>
+    <option value="audi">audi</option>
+</select>
+<br><br><input type="text" (focus)="handle_input($event.type)">
+<br><br><input type="text" (blur)="handle_input($event.type)">
+<br><br><input type="text" (mouseenter)="handle_input($event.type)">
+<br><br><input type="text" (mouseleave)="handle_input($event.type)">
+<hr>
+<label for="First_Name">First_Name</label> 
+<input type="text" id="first_name" (input)="nameupdate($event)">
+<button type="button" (click)="update_screen()">update on the screen</button>
+
+<h1>hi {{show_on_screen}} , welcome to the angular page</h1>
+<hr>
+<app-footer></app-footer>
