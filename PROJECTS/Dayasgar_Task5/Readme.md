@@ -1,0 +1,1 @@
+This page is made using the css view port units and with a hero section of left and right div .
